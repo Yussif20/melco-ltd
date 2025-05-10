@@ -29,7 +29,7 @@ function Hero() {
           </p>
           <Link
             to="/products"
-            className="inline-block bg-[#ee2e3a] text-white px-8 py-4 text-lg font-semibold rounded-md hover:bg-[#ee2e3a]/80 transition-all duration-300 transform hover:scale-105 shadow-[0_4px_8px_rgba(0,0,0,0.15)]"
+            className="inline-block bg-[#1F2937] text-white px-8 py-4 text-lg font-semibold rounded-md hover:bg-[#1F2937]/80 transition-all duration-300 transform hover:scale-105 shadow-[0_4px_8px_rgba(0,0,0,0.15)]"
           >
             {t('hero_button')}
           </Link>

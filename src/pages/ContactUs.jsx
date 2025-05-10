@@ -80,7 +80,7 @@ function ContactUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="flex flex-col justify-center">
-              <h2 className="text-2xl font-semibold text-[#243e87] dark:text-[#ee2e3a] mb-6">
+              <h2 className="text-2xl font-semibold text-[#243e87] dark:text-[#1F2937] mb-6">
                 {t('footer_contact')}
               </h2>
               <div className="space-y-4 text-gray-700 dark:text-gray-300">
@@ -156,7 +156,7 @@ function ContactUs() {
             </div>
             {/* Contact Form */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-semibold text-[#243e87] dark:text-[#ee2e3a] mb-6">
+              <h2 className="text-2xl font-semibold text-[#243e87] dark:text-[#1F2937] mb-6">
                 {t('contact_form_title')}
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -174,7 +174,7 @@ function ContactUs() {
                     value={formData.from_name}
                     onChange={handleChange}
                     required
-                    className="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-[#ee2e3a] focus:border-[#ee2e3a] transition-all duration-300"
+                    className="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-[#1F2937] focus:border-[#1F2937] transition-all duration-300"
                     aria-required="true"
                   />
                 </div>
@@ -192,7 +192,7 @@ function ContactUs() {
                     value={formData.from_email}
                     onChange={handleChange}
                     required
-                    className="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-[#ee2e3a] focus:border-[#ee2e3a] transition-all duration-300"
+                    className="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-[#1F2937] focus:border-[#1F2937] transition-all duration-300"
                     aria-required="true"
                   />
                 </div>
@@ -210,7 +210,7 @@ function ContactUs() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-[#ee2e3a] focus:border-[#ee2e3a] transition-all duration-300"
+                    className="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-[#1F2937] focus:border-[#1F2937] transition-all duration-300"
                     aria-required="true"
                   />
                 </div>
@@ -228,14 +228,14 @@ function ContactUs() {
                     onChange={handleChange}
                     required
                     rows="5"
-                    className="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-[#ee2e3a] focus:border-[#ee2e3a] transition-all duration-300"
+                    className="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-[#1F2937] focus:border-[#1F2937] transition-all duration-300"
                     aria-required="true"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#ee2e3a] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#ee2e3a]/80 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105"
+                  className="w-full bg-[#1F2937] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#1F2937]/80 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105"
                   aria-label={t('contact_form_submit')}
                 >
                   {isSubmitting

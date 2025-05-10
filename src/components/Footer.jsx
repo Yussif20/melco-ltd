@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="py-6 w-full h-[60px] bg-[#243e87] text-white flex flex-col items-center justify-center px-6"
+      className="py-6 w-full h-[60px] bg-[#1F2937] text-white flex flex-col items-center justify-center px-6"
       dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} // Dynamic text direction
     >
       {/* Logo */}

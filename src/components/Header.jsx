@@ -26,7 +26,7 @@ const Header = () => {
           <img
             className="h-8 sm:h-10 w-auto max-w-[200px] sm:max-w-[250px]"
             src={logo}
-            alt="Melco Master Equipment Logo"
+            alt="Milco Logo"
           />
         </Link>
 
@@ -37,8 +37,8 @@ const Header = () => {
             className={({ isActive }) =>
               `text-[#4e4e4e] font-semibold text-sm md:text-base px-4 py-2 rounded-lg transition-all duration-300 ${
                 isActive
-                  ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
-                  : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a] hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]'
+                  ? 'bg-[#1F2937] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                  : 'hover:bg-[#1F2937]/10 hover:text-[#1F2937] hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]'
               }`
             }
           >
@@ -49,8 +49,8 @@ const Header = () => {
             className={({ isActive }) =>
               `text-[#4e4e4e] font-semibold text-sm md:text-base px-4 py-2 rounded-lg transition-all duration-300 ${
                 isActive
-                  ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
-                  : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a] hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]'
+                  ? 'bg-[#1F2937] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                  : 'hover:bg-[#1F2937]/10 hover:text-[#1F2937] hover:shadow-[0_1px_3px_rgba(0,0,0,0.15)]'
               }`
             }
           >
@@ -61,8 +61,8 @@ const Header = () => {
             className={({ isActive }) =>
               `text-[#4e4e4e] font-semibold text-sm md:text-base px-4 py-2 rounded-lg transition-all duration-300 ${
                 isActive
-                  ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
-                  : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a] hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]'
+                  ? 'bg-[#1F2937] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                  : 'hover:bg-[#1F2937]/10 hover:text-[#1F2937] hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]'
               }`
             }
           >
@@ -73,8 +73,8 @@ const Header = () => {
             className={({ isActive }) =>
               `text-[#4e4e4e] font-semibold text-sm md:text-base px-4 py-2 rounded-lg transition-all duration-300 ${
                 isActive
-                  ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
-                  : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a] hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]'
+                  ? 'bg-[#1F2937] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                  : 'hover:bg-[#1F2937]/10 hover:text-[#1F2937] hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]'
               }`
             }
           >
@@ -92,7 +92,7 @@ const Header = () => {
               onChange={toggleLanguage}
               className="sr-only peer"
             />
-            <div className="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-[#ee2e3a] transition-colors duration-300"></div>
+            <div className="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-[#1F2937] transition-colors duration-300"></div>
             <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-transform duration-300 peer-checked:translate-x-5"></div>
           </label>
           <span className="text-sm font-medium text-gray-700">EN</span>
@@ -131,8 +131,8 @@ const Header = () => {
               className={({ isActive }) =>
                 `text-[#4e4e4e] font-semibold text-base w-full text-center py-2 rounded-lg transition-all duration-300 ${
                   isActive
-                    ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
-                    : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a]'
+                    ? 'bg-[#1F2937] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                    : 'hover:bg-[#1F2937]/10 hover:text-[#1F2937]'
                 }`
               }
               onClick={toggleMenu}
@@ -144,8 +144,8 @@ const Header = () => {
               className={({ isActive }) =>
                 `text-[#4e4e4e] font-semibold text-base w-full text-center py-2 rounded-lg transition-all duration-300 ${
                   isActive
-                    ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
-                    : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a]'
+                    ? 'bg-[#1F2937] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                    : 'hover:bg-[#1F2937]/10 hover:text-[#1F2937]'
                 }`
               }
               onClick={toggleMenu}
@@ -157,8 +157,8 @@ const Header = () => {
               className={({ isActive }) =>
                 `text-[#4e4e4e] font-semibold text-base w-full text-center py-2 rounded-lg transition-all duration-300 ${
                   isActive
-                    ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
-                    : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a]'
+                    ? 'bg-[#1F2937] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                    : 'hover:bg-[#1F2937]/10 hover:text-[#1F2937]'
                 }`
               }
               onClick={toggleMenu}
@@ -170,8 +170,8 @@ const Header = () => {
               className={({ isActive }) =>
                 `text-[#4e4e4e] font-semibold text-base w-full text-center py-2 rounded-lg transition-all duration-300 ${
                   isActive
-                    ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
-                    : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a]'
+                    ? 'bg-[#1F2937] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                    : 'hover:bg-[#1F2937]/10 hover:text-[#1F2937]'
                 }`
               }
               onClick={toggleMenu}
@@ -187,7 +187,7 @@ const Header = () => {
                   onChange={toggleLanguage}
                   className="sr-only peer"
                 />
-                <div className="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-[#ee2e3a] transition-colors duration-300"></div>
+                <div className="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-[#1F2937] transition-colors duration-300"></div>
                 <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-transform duration-300 peer-checked:translate-x-5"></div>
               </label>
               <span className="text-sm font-medium text-gray-700">EN</span>
