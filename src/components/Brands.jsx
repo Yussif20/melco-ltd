@@ -26,13 +26,13 @@ const Brands = () => {
         {t('brands_title')}
       </h2>
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 animate-slide-up delay-200">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 animate-slide-up delay-200 max-sm:justify-center">
           {brands.map((brand, index) => (
             <div
               key={index}
               className="flex items-center justify-center bg-card rounded-3xl shadow-card p-6 border border-gray-200 dark:border-gray-700 transition-all hover:scale-105"
             >
-              <div className="w-32 h-24 flex items-center justify-center">
+              <div className="w-24 h-16 flex items-center justify-center">
                 <img
                   src={brand.image}
                   alt={brand.name}
