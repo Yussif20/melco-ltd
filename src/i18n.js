@@ -10,11 +10,11 @@ const resources = {
       nav_products: 'Our Products',
       nav_contact: 'Contact Us',
       // Hero Section
-      hero_title: 'Safety First with Milco',
+      hero_title: 'Safety First with Melco',
       hero_subtext: 'Premium personal protective equipment for ultimate workplace safety.',
       hero_button: 'Explore Our Products',
       // About Section
-      about_title: 'About Milco',
+      about_title: 'About Melco',
       mission_title: 'Our Mission',
       mission_text: 'We are committed to providing innovative and sustainable solutions in the fields of contracting and trade, focusing on achieving the highest quality standards. We strive to ensure customer satisfaction by maintaining full integrity and transparency in all our dealings, fostering long-term partnerships and successful projects that meet our clients’ aspirations.',
       vision_title: 'Our Vision',
