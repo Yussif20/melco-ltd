@@ -11,10 +11,10 @@ import brand5 from '../assets/brands/red-wing-shoes.png';
 // Define the brands array
 const brands = [
   { name: '3M', image: brand1 },
-  { name: 'BW Technologies', image: brand2 },
-  { name: 'Safety Jogger', image: brand3 },
-  { name: 'MSA', image: brand4 },
   { name: 'Red Wing Shoes', image: brand5 },
+  { name: 'MSA', image: brand4 },
+  { name: 'Safety Jogger', image: brand3 },
+  { name: 'BW Technologies', image: brand2 },
 ];
 
 const Brands = () => {
