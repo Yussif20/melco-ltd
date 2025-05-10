@@ -1,0 +1,51 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+// Import brand images
+import brand1 from '../assets/brands/3m.png';
+import brand2 from '../assets/brands/bw-technologies.svg';
+import brand3 from '../assets/brands/safety-jogger.png';
+import brand4 from '../assets/brands/msa.jpg';
+import brand5 from '../assets/brands/red-wing-shoes.png';
+
+// Define the brands array
+const brands = [
+  { name: '3M', image: brand1 },
+  { name: 'BW Technologies', image: brand2 },
+  { name: 'Safety Jogger', image: brand3 },
+  { name: 'MSA', image: brand4 },
+  { name: 'Red Wing Shoes', image: brand5 },
+];
+
+const Brands = () => {
+  const { t } = useTranslation();
+
+  return (
+    <section className="py-16 px-4 sm:px-6 lg:px-20 bg-background">
+      <h2 className="text-4xl sm:text-5xl font-semibold text-[#243e87] dark:text-white tracking-tight text-center mb-16 animate-slide-up">
+        {t('brands_title')}
+      </h2>
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 animate-slide-up delay-200">
+          {brands.map((brand, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center bg-card rounded-3xl shadow-card p-6 border border-gray-200 dark:border-gray-700 transition-all hover:scale-105"
+            >
+              <div className="w-32 h-24 flex items-center justify-center">
+                <img
+                  src={brand.image}
+                  alt={brand.name}
+                  className="max-w-full max-h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Brands;

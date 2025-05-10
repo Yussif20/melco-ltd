@@ -1,6 +1,6 @@
 import AnimatedSection from '../utils/AnimatedSection';
 import Hero from '../components/Hero';
-import AboutUs from './AboutUs';
+import Brands from '../components/Brands';
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
         <Hero />
       </AnimatedSection>
       <AnimatedSection>
-        <AboutUs />
+        <Brands />
       </AnimatedSection>
     </>
   );

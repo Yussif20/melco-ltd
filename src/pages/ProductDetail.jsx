@@ -153,10 +153,7 @@ const ProductDetail = () => {
                 </p>
               </div>
               <div className="pt-6 ">
-                <h3 className="text-xl font-semibold text-[#243e87] dark:text-[#1F2937] mb-4">
-                  {t('product_details')}
-                </h3>
-                <p className="text-base sm:text-lg text-foreground leading-relaxed">
+                <p className="text-base sm:text-lg text-foreground leading-relaxed text-center">
                   {t(`${product.name}_details`)}
                 </p>
               </div>
