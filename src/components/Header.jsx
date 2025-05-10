@@ -33,6 +33,18 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
           <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `text-[#4e4e4e] font-semibold text-sm md:text-base px-4 py-2 rounded-lg transition-all duration-300 ${
+                isActive
+                  ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                  : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a] hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]'
+              }`
+            }
+          >
+            {t('nav_home')}
+          </NavLink>
+          <NavLink
             to="/about"
             className={({ isActive }) =>
               `text-[#4e4e4e] font-semibold text-sm md:text-base px-4 py-2 rounded-lg transition-all duration-300 ${
@@ -114,6 +126,19 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden mt-4">
           <nav className="flex flex-col items-center gap-4">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `text-[#4e4e4e] font-semibold text-base w-full text-center py-2 rounded-lg transition-all duration-300 ${
+                  isActive
+                    ? 'bg-[#ee2e3a] text-white shadow-[0_4px_8px_rgba(0,0,0,0.15)]'
+                    : 'hover:bg-[#ee2e3a]/10 hover:text-[#ee2e3a]'
+                }`
+              }
+              onClick={toggleMenu}
+            >
+              {t('nav_home')}
+            </NavLink>
             <NavLink
               to="/about"
               className={({ isActive }) =>

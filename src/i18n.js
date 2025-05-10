@@ -5,6 +5,7 @@ const resources = {
   en: {
     translation: {
       // Navigation
+      nav_home: 'Home',
       nav_about: 'About Us',
       nav_products: 'Our Products',
       nav_contact: 'Contact Us',
@@ -59,6 +60,7 @@ const resources = {
   ar: {
     translation: {
       // Navigation
+      nav_home: 'الرئيسية',
       nav_about: 'نبذة عنا',
       nav_products: 'منتجاتنا',
       nav_contact: 'تواصل معنا',
