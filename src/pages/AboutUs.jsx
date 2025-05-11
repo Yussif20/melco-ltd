@@ -18,11 +18,11 @@ const AboutUs = () => {
         <h2 className="text-4xl sm:text-5xl font-extrabold text-[#243e87] dark:text-white text-center mb-16 tracking-tight animate-slide-up">
           {t('about_title')}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-slide-up delay-200 place-items-center">
-          <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 min-h-[20rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#1F2937] rounded-full flex items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-slide-up delay-200 place-items-center">
+          <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 min-h-[14rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#1F2937] rounded-full flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-white"
+                className="w-5 h-5 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -36,18 +36,18 @@ const AboutUs = () => {
               </svg>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold text-[#243e87] dark:text-[#1F2937] mt-4 mb-6 text-center">
+              <h3 className="text-xl font-semibold text-[#243e87] dark:text-[#1F2937] mt-6 mb-2 text-center">
                 {t('mission_title')}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
                 {t('mission_text')}
               </p>
             </div>
           </div>
-          <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 min-h-[20rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#1F2937] rounded-full flex items-center justify-center">
+          <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 min-h-[14rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#1F2937] rounded-full flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-white"
+                className="w-5 h-5 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -67,59 +67,93 @@ const AboutUs = () => {
               </svg>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold text-[#243e87] dark:text-[#1F2937] mt-4 mb-6 text-center">
+              <h3 className="text-xl font-semibold text-[#243e87] dark:text-[#1F2937] mt-6 mb-2 text-center">
                 {t('vision_title')}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-center leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
                 {t('vision_text')}
               </p>
             </div>
           </div>
-          <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 min-h-[20rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#1F2937] rounded-full flex items-center justify-center">
-              <svg
-                className="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              </svg>
+        </div>
+        <div className="mt-12">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-[#243e87] dark:text-white text-center mb-8 tracking-tight animate-slide-up">
+            {t('values_title')}
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-slide-up delay-300 place-items-center">
+            <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 min-h-[10rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-[#1F2937] rounded-full flex items-center justify-center">
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-[#243e87] dark:text-[#1F2937] mt-4 mb-2 text-center">
+                  {t('quality')}
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
+                  {t('quality_text')}
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-[#243e87] dark:text-[#1F2937] mt-4 mb-6 text-center">
-                {t('values_title')}
-              </h3>
-              <div className="grid grid-cols-1 gap-4">
-                <div className="flex flex-col items-center">
-                  <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-1">
-                    {t('quality')}
-                  </h4>
-                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                    {t('quality_text')}
-                  </p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-1">
-                    {t('innovation')}
-                  </h4>
-                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                    {t('innovation_text')}
-                  </p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-1">
-                    {t('integrity')}
-                  </h4>
-                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                    {t('integrity_text')}
-                  </p>
-                </div>
+            <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 min-h-[10rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-[#1F2937] rounded-full flex items-center justify-center">
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-[#243e87] dark:text-[#1F2937] mt-4 mb-2 text-center">
+                  {t('innovation')}
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
+                  {t('innovation_text')}
+                </p>
+              </div>
+            </div>
+            <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 min-h-[10rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-[#1F2937] rounded-full flex items-center justify-center">
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-[#243e87] dark:text-[#1F2937] mt-4 mb-2 text-center">
+                  {t('integrity')}
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
+                  {t('integrity_text')}
+                </p>
               </div>
             </div>
           </div>
