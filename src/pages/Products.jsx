@@ -1,15 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-// import headImage from '../assets/head.jpg';
-// import eyeImage from '../assets/eye.jpg';
-// import earImage from '../assets/ear.webp';
-// import breatheImage from '../assets/breathe.jpg';
-// import handImage from '../assets/hand.jpg';
-// import bodyImage from '../assets/body.jpg';
-// import footImage from '../assets/foot.jpeg';
-// import gasImage from '../assets/gas.jpg';
-import headImage from '../assets/products/head.jpg';
+
+import headImage from '../assets/products/head.png';
 import eyeImage from '../assets/products/eye.jpg';
 import earImage from '../assets/products/hear.jpg';
 import breatheImage from '../assets/products/resp.jpg';
@@ -17,6 +10,8 @@ import handImage from '../assets/products/hand.jpg';
 import bodyImage from '../assets/products/body.jpg';
 import footImage from '../assets/products/foot.jpg';
 import gasImage from '../assets/products/gas.jpg';
+
+import productsImage from '../assets/products.jpg';
 
 const products = [
   {
@@ -67,9 +62,13 @@ const Products = () => {
   return (
     <section
       id="products"
-      className="py-12 sm:py-16 px-4 sm:px-6 lg:px-20 bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800"
+      className="relative py-12 sm:py-16 px-4 sm:px-6 lg:px-20 bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800"
     >
-      <div className="max-w-7xl mx-auto">
+      <div
+        style={{ backgroundImage: `url(${productsImage})` }}
+        className="absolute inset-0 bg-cover bg-center opacity-10 z-"
+      ></div>
+      <div className="relative max-w-7xl mx-auto">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-[#243e87] dark:text-white text-center mb-12 tracking-tight">
           {t('products_title')}
         </h2>
