@@ -1,14 +1,22 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
-import headImage from '../assets/head.jpg';
-import eyeImage from '../assets/eye.jpg';
-import earImage from '../assets/ear.webp';
-import breatheImage from '../assets/breathe.jpg';
-import handImage from '../assets/hand.jpg';
-import bodyImage from '../assets/body.jpg';
-import footImage from '../assets/foot.jpeg';
-import gasImage from '../assets/gas.jpg';
+// import headImage from '../assets/head.jpg';
+// import eyeImage from '../assets/eye.jpg';
+// import earImage from '../assets/ear.webp';
+// import breatheImage from '../assets/breathe.jpg';
+// import handImage from '../assets/hand.jpg';
+// import bodyImage from '../assets/body.jpg';
+// import footImage from '../assets/foot.jpeg';
+// import gasImage from '../assets/gas.jpg';
+import headImage from '../assets/products/head.jpg';
+import eyeImage from '../assets/products/eye.jpg';
+import earImage from '../assets/products/hear.jpg';
+import breatheImage from '../assets/products/resp.jpg';
+import handImage from '../assets/products/hand.jpg';
+import bodyImage from '../assets/products/body.jpg';
+import footImage from '../assets/products/foot.jpg';
+import gasImage from '../assets/products/gas.jpg';
 
 const products = [
   {

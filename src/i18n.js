@@ -71,6 +71,10 @@ const resources = {
       contact_form_success: 'Message sent successfully!',
       contact_form_error: 'Failed to send message. Please try again.',
       brands_title: "Our Brands",
+      testimonials_title: "What Our Clients Say",
+      years_experience: "Years of Experience",
+      satisfied_clients: "Satisfied Clients",
+      products_sold: "Products Sold",
       // Footer
       copyright: '© 2025 All rights reserved.',
     },
@@ -144,6 +148,10 @@ const resources = {
       contact_form_success: 'تم إرسال الرسالة بنجاح!',
       contact_form_error: 'فشل إرسال الرسالة. حاول مرة أخرى.',
       brands_title: "علاماتنا التجارية",
+      testimonials_title: "ماذا يقول عملاؤنا",
+      years_experience: "سنوات من الخبرة",
+      satisfied_clients: "عملاء راضون",
+      products_sold: "منتجات تم بيعها",
       // Footer
       copyright: '© 2025 جميع الحقوق محفوظة',
     },
