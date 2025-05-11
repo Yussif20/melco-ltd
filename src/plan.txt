@@ -4,7 +4,7 @@ nav links inside nav blue box ✅
 text on hero video changed => ✅
 brands withs no title ✅
 footer as requested ✅
-values as requested
+values as requested ✅
 add the new brands
 contact us => as requested
 contact us button darken bg

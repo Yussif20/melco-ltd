@@ -7,6 +7,8 @@ import brand2 from '../assets/brands/bw-technologies.svg';
 import brand3 from '../assets/brands/safety-jogger.png';
 import brand4 from '../assets/brands/msa.jpg';
 import brand5 from '../assets/brands/red-wing-shoes.png';
+import brand6 from '../assets/brands/ansell.svg';
+import brand7 from '../assets/brands/dupont.png';
 
 // Define the brands array
 const brands = [
@@ -15,6 +17,8 @@ const brands = [
   { name: 'MSA', image: brand4 },
   { name: 'Safety Jogger', image: brand3 },
   { name: 'BW Technologies', image: brand2 },
+  { name: 'Ansell', image: brand6 },
+  { name: 'Dupont', image: brand7 },
 ];
 
 const Brands = () => {
