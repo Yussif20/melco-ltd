@@ -10,8 +10,8 @@ const resources = {
       nav_products: 'Our Products',
       nav_contact: 'Contact Us',
       // Hero Section
-      hero_title: 'Safety First with Melco',
-      hero_subtext: 'Premium personal protective equipment for ultimate workplace safety.',
+      hero_title: 'Your Safety Partner at Work',
+      hero_subtext: 'Trusted quality. Enduring partnership. Safety that grows with you.',
       hero_button: 'Explore Our Products',
       // About Section
       about_title: 'About Melco',
@@ -83,12 +83,12 @@ const resources = {
     translation: {
       // Navigation
       nav_home: 'الرئيسية',
-      nav_about: 'نبذة عنا',
+      nav_about: ' من نحن',
       nav_products: 'منتجاتنا',
       nav_contact: 'تواصل معنا',
       // Hero Section
-      hero_title: 'السلامة أولاً مع ميلكو',
-      hero_subtext: 'معدات حماية شخصية ممتازة لضمان السلامة القصوى في مكان العمل.',
+      hero_title: 'شريكك الآمن في بيئة العمل ',
+      hero_subtext: 'جودة نثق بها، وشراكة تنمو مع كل إنجاز.',
       hero_button: 'استكشف منتجاتنا',
       // About Section
       about_title: 'عن ميلكو',

@@ -19,12 +19,12 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-200 w-full border-b border-gray-300 shadow-lg px-4 sm:px-10 lg:px-20 py-6 sm:py-10">
+    <header className="bg-gray-200 w-full border-b border-gray-300 shadow-lg px-4 sm:px-10 lg:px-20 py-4 sm:py-6">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-6">
         {/* Logo */}
         <Link to="/">
           <img
-            className="h-8 sm:h-10 w-auto max-w-[200px] sm:max-w-[250px]"
+            className="h-10 sm:h-15 w-auto max-w-[200px] sm:max-w-[250px]"
             src={logo}
             alt="Milco Logo"
           />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 
 // Import brand images
 import brand1 from '../assets/brands/3m.png';
@@ -18,13 +18,13 @@ const brands = [
 ];
 
 const Brands = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-20 bg-background">
-      <h2 className="text-4xl sm:text-5xl font-semibold text-[#243e87] dark:text-white tracking-tight text-center mb-16 animate-slide-up">
+      {/* <h2 className="text-4xl sm:text-5xl font-semibold text-[#243e87] dark:text-white tracking-tight text-center mb-16 animate-slide-up">
         {t('brands_title')}
-      </h2>
+      </h2> */}
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 animate-slide-up delay-200 max-sm:justify-center">
           {brands.map((brand, index) => (
