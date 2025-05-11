@@ -9,6 +9,7 @@ import ContactUs from './pages/ContactUs';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import i18next from 'i18next';
+import AnimatedSection from './utils/AnimatedSection';
 
 const App = () => {
   useEffect(() => {
