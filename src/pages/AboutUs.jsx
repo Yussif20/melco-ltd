@@ -18,69 +18,33 @@ const AboutUs = () => {
         <h2 className="text-4xl sm:text-5xl font-extrabold text-[#243e87] dark:text-white text-center mb-16 tracking-tight animate-slide-up">
           {t('about_title')}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-slide-up delay-200 place-items-center">
-          <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 min-h-[14rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#1F2937] rounded-full flex items-center justify-center">
-              <svg
-                className="w-5 h-5 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-[#243e87] dark:text-[#1F2937] mt-6 mb-2 text-center">
-                {t('mission_title')}
-              </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                {t('mission_text')}
-              </p>
-            </div>
-          </div>
-          <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 min-h-[14rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#1F2937] rounded-full flex items-center justify-center">
-              <svg
-                className="w-5 h-5 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                />
-              </svg>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-[#243e87] dark:text-[#1F2937] mt-6 mb-2 text-center">
-                {t('vision_title')}
-              </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-                {t('vision_text')}
-              </p>
-            </div>
-          </div>
+
+        {/* Vision Section */}
+        <div className="mb-12 animate-slide-up delay-200">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-[#243e87] dark:text-white text-center mb-6">
+            {t('vision_title')}
+          </h3>
+          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed max-w-2xl mx-auto">
+            {t('vision_text')}
+          </p>
         </div>
-        <div className="mt-12">
-          <h3 className="text-2xl sm:text-3xl font-semibold text-[#243e87] dark:text-white text-center mb-8 tracking-tight animate-slide-up">
+
+        {/* Mission Section */}
+        <div className="mb-12 animate-slide-up delay-300">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-[#243e87] dark:text-white text-center mb-6">
+            {t('mission_title')}
+          </h3>
+          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 text-center leading-relaxed max-w-2xl mx-auto">
+            {t('mission_text')}
+          </p>
+        </div>
+
+        {/* Values Section */}
+        <div className="animate-slide-up delay-400">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-[#243e87] dark:text-white text-center mb-8">
             {t('values_title')}
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-slide-up delay-300 place-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
             <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 min-h-[10rem] flex flex-col justify-between transform hover:-translate-y-2 transition-all duration-500">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-[#1F2937] rounded-full flex items-center justify-center">
                 <svg
