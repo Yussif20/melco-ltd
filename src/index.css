@@ -7,7 +7,7 @@
 @theme {
   --font-inter: 'Inter', ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-amiri: 'Amiri', serif;
+  --font-tajawal: 'Tajawal', serif;
   --background: #e5e7eb; /* gray-200 */
   --foreground: #1f2937; /* gray-800 */
   --card-bg: #ffffff; /* white */
@@ -27,7 +27,7 @@ body {
 /* Apply Amiri font for RTL direction or specific elements */
 [dir='rtl'],
 .font-amiri {
-  font-family: var(--font-amiri);
+  font-family: var(--font-tajawal);
 }
 
 /* Scrollbar Styling */
