@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -6,12 +11,22 @@ import AboutUs from './pages/AboutUs';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import ContactUs from './pages/ContactUs';
-import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import i18next from 'i18next';
-import AnimatedSection from './utils/AnimatedSection';
+import { useTranslation } from 'react-i18next';
+
+const ScrollToTop = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+};
 
 const App = () => {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
     const handleDirection = () => {
       const currentLang = i18next.language;
@@ -31,7 +46,8 @@ const App = () => {
     <Router>
       <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
         <Header />
-        <main className="flex-1">
+        <main className="flex-1" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />

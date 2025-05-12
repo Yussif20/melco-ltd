@@ -36,7 +36,7 @@ const Brands = () => {
               key={index}
               className="flex items-center justify-center bg-card rounded-3xl shadow-card p-6 border border-gray-200 dark:border-gray-700 transition-all hover:scale-105"
             >
-              <div className="w-24 h-16 flex items-center justify-center">
+              <div className="w-36 h-30 flex items-center justify-center">
                 <img
                   src={brand.image}
                   alt={brand.name}

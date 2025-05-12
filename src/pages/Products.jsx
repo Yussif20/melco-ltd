@@ -11,8 +11,6 @@ import bodyImage from '../assets/products/body.jpg';
 import footImage from '../assets/products/foot.jpg';
 import gasImage from '../assets/products/gas.jpg';
 
-import productsImage from '../assets/products.jpg';
-
 const products = [
   {
     name: 'head_protection',
@@ -62,21 +60,17 @@ const Products = () => {
   return (
     <section
       id="products"
-      className="relative py-12 sm:py-16 px-4 sm:px-6 lg:px-20 bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800"
+      className=" py-12 sm:py-16 px-4 sm:px-6 lg:px-20 bg-white dark:from-gray-900 dark:to-gray-800"
     >
-      <div
-        style={{ backgroundImage: `url(${productsImage})` }}
-        className="absolute inset-0 bg-cover bg-center opacity-10 z-"
-      ></div>
       <div className="relative max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-[#243e87] dark:text-white text-center mb-12 tracking-tight">
+        {/* <h2 className="text-4xl sm:text-5xl font-extrabold text-[#243e87] dark:text-white text-center mb-12 tracking-tight">
           {t('products_title')}
-        </h2>
+        </h2> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl shadow-xl p-6 w-full max-w-xs mx-auto transform hover:-translate-y-2 transition-all duration-500"
+              className="group rounded-2xl shadow-xl p-6 w-full max-w-xs mx-auto transform hover:-translate-y-2 transition-all duration-500"
             >
               <img
                 src={product.image}
