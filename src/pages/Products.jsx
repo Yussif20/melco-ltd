@@ -13,41 +13,49 @@ import gasImage from '../assets/products/gas.jpg';
 
 const products = [
   {
+    id: 'head-protection',
     name: 'head_protection',
     image: headImage,
     description: 'head_protection_desc',
   },
   {
+    id: 'eye-and-face-protection',
     name: 'eye_face_protection',
     image: eyeImage,
     description: 'eye_face_protection_desc',
   },
   {
+    id: 'hearing-protection',
     name: 'hearing_protection',
     image: earImage,
     description: 'hearing_protection_desc',
   },
   {
+    id: 'respiratory-protection',
     name: 'respiratory_protection',
     image: breatheImage,
     description: 'respiratory_protection_desc',
   },
   {
+    id: 'hand-protection',
     name: 'hand_protection',
     image: handImage,
     description: 'hand_protection_desc',
   },
   {
+    id: 'body-protection',
     name: 'body_protection',
     image: bodyImage,
     description: 'body_protection_desc',
   },
   {
+    id: 'foot-protection',
     name: 'foot_protection',
     image: footImage,
     description: 'foot_protection_desc',
   },
   {
+    id: 'gas-detector',
     name: 'gas_detector',
     image: gasImage,
     description: 'gas_detector_desc',
@@ -60,12 +68,9 @@ const Products = () => {
   return (
     <section
       id="products"
-      className=" py-12 sm:py-16 px-4 sm:px-6 lg:px-20 bg-white dark:from-gray-900 dark:to-gray-800"
+      className="py-12 sm:py-16 px-4 sm:px-6 lg:px-20 bg-white dark:from-gray-900 dark:to-gray-800"
     >
       <div className="relative max-w-7xl mx-auto">
-        {/* <h2 className="text-4xl sm:text-5xl font-extrabold text-[#243e87] dark:text-white text-center mb-12 tracking-tight">
-          {t('products_title')}
-        </h2> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product, index) => (
             <div
@@ -88,7 +93,7 @@ const Products = () => {
                   </p>
                 </div>
                 <Link
-                  to={`/products/${product.name}`}
+                  to={`/show-products/${product.id}`}
                   className="w-full mt-4 px-4 py-2 bg-[#1F2937] text-white rounded-full hover:bg-[#1F2937]/80 transition-all duration-300 transform hover:scale-105 text-center"
                 >
                   {t('more_button')}

@@ -9,11 +9,11 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Products from './pages/Products';
-import ProductDetail from './pages/ProductDetail';
 import ContactUs from './pages/ContactUs';
 import { useEffect } from 'react';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
+import ShowProducts from './pages/ShowProducts';
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -44,15 +44,17 @@ const App = () => {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <div
+        className={`flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 `}
+      >
         <Header />
-        <main className="flex-1" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
+        <main className="flex-1">
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/products/:productName" element={<ProductDetail />} />
+            <Route path="/show-products/:category" element={<ShowProducts />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
         </main>
