@@ -79,10 +79,12 @@ const Footer = () => {
             {t('footer_contact_title')}
           </h3>
           <p className="text-sm sm:text-base text-gray-300">
-            {t('footer_email')}: mohamed@melco-ltd.com
+            {t('footer_email')}
+            <a href="mailto:mohamed@melco-ltd.com">: mohamed@melco-ltd.com</a>
           </p>
           <p className="text-sm sm:text-base text-gray-300">
-            {t('footer_phone')}: +966535852438
+            {t('footer_phone')}
+            <a href="tel:+966535852438">: +966535852438</a>
           </p>
         </div>
       </div>

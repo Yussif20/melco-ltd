@@ -40,6 +40,40 @@ import handProtection1 from "../assets/show-products/hand-protection/hand1.png"
 import handProtection2 from "../assets/show-products/hand-protection/hand2.webp"
 import handProtection3 from "../assets/show-products/hand-protection/hand3.jpg"
 
+// Foot Protection
+import footProtection1 from "../assets/show-products/foot-protection/foot1.png"
+import footProtection2 from "../assets/show-products/foot-protection/foot2.webp"
+import footProtection3 from "../assets/show-products/foot-protection/foot3.jpg"
+import footProtection4 from "../assets/show-products/foot-protection/foot4.webp"
+import footProtection5 from "../assets/show-products/foot-protection/foot5.png"
+import footProtection6 from "../assets/show-products/foot-protection/foot6.jpg" 
+import footProtection7 from "../assets/show-products/foot-protection/foot7.png"
+import footProtection8 from "../assets/show-products/foot-protection/foot8.jpg"
+import footProtection9 from "../assets/show-products/foot-protection/foot9.png"
+import footProtection10 from "../assets/show-products/foot-protection/foot10.png"
+import footProtection11 from "../assets/show-products/foot-protection/foot11.jpg" 
+import footProtection12 from "../assets/show-products/foot-protection/foot12.jpg" 
+import footProtection13 from "../assets/show-products/foot-protection/foot13.png"
+import footProtection14 from "../assets/show-products/foot-protection/foot14.png"
+import footProtection15 from "../assets/show-products/foot-protection/foot15.png" 
+import footProtection16 from "../assets/show-products/foot-protection/foot16.jpg"
+import footProtection17 from "../assets/show-products/foot-protection/foot17.jpg" 
+import footProtection18 from "../assets/show-products/foot-protection/foot18.png"
+import footProtection19 from "../assets/show-products/foot-protection/foot19.jpeg"
+import footProtection20 from "../assets/show-products/foot-protection/foot20.jpeg"
+import footProtection21 from "../assets/show-products/foot-protection/foot21.png"
+
+// Body Protection
+import bodyProtection1 from "../assets/show-products/body-protection/body1.webp"
+import bodyProtection2 from "../assets/show-products/body-protection/body2.jpg"
+import bodyProtection3 from "../assets/show-products/body-protection/body3.jpeg"
+import bodyProtection4 from "../assets/show-products/body-protection/body4.webp"
+import bodyProtection5 from "../assets/show-products/body-protection/body5.jpg" 
+import bodyProtection6 from "../assets/show-products/body-protection/body6.png"
+import bodyProtection7 from "../assets/show-products/body-protection/body7.png"
+import bodyProtection8 from "../assets/show-products/body-protection/body8.png"
+import bodyProtection9 from "../assets/show-products/body-protection/body9.png"
+
 // Gas Protection
 import gas1 from "../assets/show-products/gas-protection/gas1.jpeg"
 import gas2 from "../assets/show-products/gas-protection/gas2.webp"
@@ -220,154 +254,154 @@ const productsData = {
     {
       name: "Red Wing Style 3210 Men's Oxford",
       description: "foot_protection_desc_1",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+1"
+      image: footProtection1
     },
     {
       name: "Red Wing Style 6338 Men's Athletics",
       description: "foot_protection_desc_2",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+2"
+      image: footProtection2
     },
     {
       name: "Red Wing Style 6670 Men's TruHiker 6-Inch Hiker Boot",
       description: "foot_protection_desc_3",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+3"
+      image: footProtection3
     },
     {
       name: "Red Wing Style 2233 Men's Supersole 8-Inch Boot",
       description: "foot_protection_desc_4",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+4"
+      image: footProtection4
     },
     {
       name: "Red Wing Style 8264 Men's 9-Inch Pull-On Boot",
       description: "foot_protection_desc_5",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+5"
+      image: footProtection5
     },
     {
       name: "Red Wing Style 3207 Men's Petroking 8-Inch Boot",
       description: "foot_protection_desc_6",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+6"
+      image: footProtection6
     },
     {
       name: "Red Wing Style 6716 Men's Cross Lite Oxford",
       description: "foot_protection_desc_7",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+7"
+      image: footProtection7
     },
     {
       name: "Red Wing Style 6721 Men's Cross Lite Slip-On",
       description: "foot_protection_desc_8",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+8"
+      image: footProtection8
     },
     {
       name: "Red Wing Style 6722 Men's Cross Lite Slip-On",
       description: "foot_protection_desc_9",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+9"
+      image: footProtection9
     },
     {
       name: "Red Wing Style 6714 Men's Cross Lite Chukka",
       description: "foot_protection_desc_10",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+10"
+      image:  footProtection10
     },
     {
       name: "Red Wing Style 8212 Men's Supersole 5-Inch Boot",
       description: "foot_protection_desc_11",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+11"
+      image: footProtection11
     },
     {
       name: "Red Wing Style 8231 Men's 11-Inch Pull-On Boot",
       description: "foot_protection_desc_12",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+12"
+      image: footProtection12
     },
     {
       name: "Red Wing Style 6719 Men's Cross Lite Chukka",
       description: "foot_protection_desc_13",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+13"
+      image: footProtection13
     },
     {
       name: "Red Wing Style 3229 Men's Petroking 8-Inch Boot",
       description: "foot_protection_desc_14",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+14"
+      image: footProtection14
     },
     {
       name: "Worx Style 5160 Women's Lithium Athletic",
       description: "foot_protection_desc_15",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+15"
+      image: footProtection15
     },
     {
       name: "Safety Jogger X2000 S3",
       description: "foot_protection_desc_16",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+16"
+      image: footProtection16
     },
     {
       name: "Safety Jogger X2020 S3",
       description: "foot_protection_desc_17",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+17"
+      image: footProtection17
     },
     {
       name: "Red Wing Style 6646 Men's Slip-On",
       description: "foot_protection_desc_18",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+18"
+      image: footProtection18
     },
     {
       name: "Safety Jogger HERCULES S5 FO",
       description: "foot_protection_desc_19",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+19"
+      image: footProtection19
     },
     {
       name: "Safety Jogger Bestboy S3",
       description: "foot_protection_desc_20",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+20"
+      image: footProtection20
     },
     {
       name: "Safety Jogger Bestrun S3",
       description: "foot_protection_desc_21",
-      image: "https://via.placeholder.com/300x200?text=Foot+Protection+21"
+      image: footProtection21
     }
   ],
   "body-protection": [
     {
       name: "61111 Desert/Tropical FR Coverall",
       description: "body_protection_desc_1",
-      image: "https://via.placeholder.com/300x200?text=Body+Protection+1"
+      image: bodyProtection1
     },
     {
       name: "61640 Desert Tropical Non-FR Coverall",
       description: "body_protection_desc_2",
-      image: "https://via.placeholder.com/300x200?text=Body+Protection+2"
+      image: bodyProtection2
     },
     {
       name: "61615 Desert Tropical FR Coverall",
       description: "body_protection_desc_3",
-      image: "https://via.placeholder.com/300x200?text=Body+Protection+3"
+      image: bodyProtection3
     },
     {
       name: "66411 FR Plain Front Trousers",
       description: "body_protection_desc_4",
-      image: "https://via.placeholder.com/300x200?text=Body+Protection+4"
+      image: bodyProtection4
     },
     {
       name: "66311 FR Shirt",
       description: "body_protection_desc_5",
-      image: "https://via.placeholder.com/300x200?text=Body+Protection+5"
+      image: bodyProtection5
     },
     {
       name: "69007 Soft Shell Jacket",
       description: "body_protection_desc_6",
-      image: "https://via.placeholder.com/300x200?text=Body+Protection+6"
+      image: bodyProtection6
     },
     {
       name: "69018 Soft Shell Jacket",
       description: "body_protection_desc_7",
-      image: "https://via.placeholder.com/300x200?text=Body+Protection+7"
+      image: bodyProtection7
     },
     {
       name: "69006 Winter Soft Shell Jacket",
       description: "body_protection_desc_8",
-      image: "https://via.placeholder.com/300x200?text=Body+Protection+8"
+      image: bodyProtection8
     },
     {
       name: "69019 Backpack",
       description: "body_protection_desc_9",
-      image: "https://via.placeholder.com/300x200?text=Body+Protection+9"
+      image: bodyProtection9
     }
   ],
   "gas-detector": [
