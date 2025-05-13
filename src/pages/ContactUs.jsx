@@ -5,7 +5,6 @@ import AnimatedSection from '../utils/AnimatedSection';
 import mailIcon from '../assets/icons/email.png';
 import phoneIcon from '../assets/icons/phone.png';
 import placeIcon from '../assets/icons/place.png';
-import contactImage from '../assets/contact.webp';
 
 function ContactUs() {
   const { t } = useTranslation();
@@ -73,10 +72,6 @@ function ContactUs() {
 
   return (
     <section className="relative bg-gray-100 dark:bg-gray-900 py-16">
-      <div
-        style={{ backgroundImage: `url(${contactImage})` }}
-        className="absolute inset-0 bg-cover bg-center opacity-10"
-      ></div>
       <AnimatedSection>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-[#243e87] dark:text-white text-center mb-12">
@@ -118,32 +113,6 @@ function ContactUs() {
                 </p>
               </div>
               <div className="flex space-x-4 mt-6">
-                <a
-                  href="https://facebook.com"
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                  aria-label="Facebook"
-                >
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                  </svg>
-                </a>
-                <a
-                  href="https://twitter.com"
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-900 text-white transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
-                  aria-label="Twitter"
-                >
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
-                </a>
                 <a
                   href="https://linkedin.com"
                   className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-700 hover:bg-blue-800 text-white transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2"

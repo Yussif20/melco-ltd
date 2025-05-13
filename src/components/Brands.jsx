@@ -9,16 +9,22 @@ import brand4 from '../assets/brands/msa.jpg';
 import brand5 from '../assets/brands/red-wing-shoes.png';
 import brand6 from '../assets/brands/ansell.svg';
 import brand7 from '../assets/brands/dupont.png';
+import brand8 from '../assets/brands/uvex.png';
+import brand9 from '../assets/brands/honeywell.png';
+import brand10 from '../assets/brands/sarena-textile.jpg';
 
 // Define the brands array
 const brands = [
   { name: '3M', image: brand1 },
   { name: 'Red Wing Shoes', image: brand5 },
   { name: 'MSA', image: brand4 },
-  { name: 'Safety Jogger', image: brand3 },
   { name: 'BW Technologies', image: brand2 },
+  { name: 'Safety Jogger', image: brand3 },
   { name: 'Ansell', image: brand6 },
   { name: 'Dupont', image: brand7 },
+  { name: 'Uvex', image: brand8 },
+  { name: 'Honeywell', image: brand9 },
+  { name: 'Sarena Textile', image: brand10 },
 ];
 
 const Brands = () => {
@@ -26,9 +32,6 @@ const Brands = () => {
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-20 bg-background">
-      {/* <h2 className="text-4xl sm:text-5xl font-semibold text-[#243e87] dark:text-white tracking-tight text-center mb-16 animate-slide-up">
-        {t('brands_title')}
-      </h2> */}
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 animate-slide-up delay-200 max-sm:justify-center">
           {brands.map((brand, index) => (

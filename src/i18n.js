@@ -131,7 +131,7 @@ const resources = {
       // Contact Section
       contact_title: 'Contact Us',
       footer_contact: 'Get in Touch',
-      contact_place: 'Riyadh, Saudi Arabia',
+      contact_place: 'Aldammam, Saudi Arabia',
       contact_form_title: 'Send Us a Message',
       contact_form_name: 'Your Name',
       contact_form_email: 'Your Email',
@@ -286,7 +286,7 @@ const resources = {
       // Contact Section
       contact_title: 'تواصل معنا',
       footer_contact: 'تواصلوا معنا',
-      contact_place: 'الرياض، المملكة العربية السعودية',
+      contact_place: 'الدمام المملكة العربية السعودية',
       contact_form_title: 'أرسل لنا رسالة',
       contact_form_name: 'اسمك',
       contact_form_email: 'بريدك الإلكتروني',
