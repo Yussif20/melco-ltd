@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import qualityIcon from '../assets/values/star.png';
 import innovationIcon from '../assets/values/innovation.png';
-// import professionalismIcon from '../assets/values/professionalism.png';
+import professionalismIcon from '../assets/values/professionalism.png';
 import partnershipIcon from '../assets/values/partnership.png';
 import sustainabilityIcon from '../assets/values/sustainability.png';
 import aboutTitleImage from '../assets/about-title.jpg';
@@ -88,7 +88,7 @@ const AboutUs = () => {
               {/* Professionalism */}
               <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center min-h-[14rem] w-full max-w-xs">
                 <div className="w-10 h-10 mb-4 flex items-center justify-center">
-                  {/* <img src={professionalismIcon} alt="Professionalism Icon" /> */}
+                  <img src={professionalismIcon} alt="Professionalism Icon" />
                 </div>
                 <h4 className="text-xl font-medium text-[#243e87] dark:text-gray-200 mb-3">
                   {t('professionalism')}
