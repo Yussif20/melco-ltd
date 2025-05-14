@@ -15,16 +15,32 @@ import brand10 from '../assets/brands/sarena-textile.jpg';
 
 // Define the brands array
 const brands = [
-  { name: '3M', image: brand1 },
-  { name: 'Red Wing Shoes', image: brand5 },
-  { name: 'MSA', image: brand4 },
-  { name: 'BW Technologies', image: brand2 },
-  { name: 'Safety Jogger', image: brand3 },
-  { name: 'Ansell', image: brand6 },
-  { name: 'Dupont', image: brand7 },
-  { name: 'Uvex', image: brand8 },
-  { name: 'Honeywell', image: brand9 },
-  { name: 'Sarena Textile', image: brand10 },
+  { name: '3M', image: brand1, link: 'https://www.3m.com/' },
+  {
+    name: 'Red Wing Shoes',
+    image: brand5,
+    link: 'https://www.redwingshoes.com/',
+  },
+  { name: 'MSA', image: brand4, link: 'https://us.msasafety.com/' },
+  {
+    name: 'BW Technologies',
+    image: brand2,
+    link: 'https://www.honeywellanalytics.com/',
+  },
+  {
+    name: 'Safety Jogger',
+    image: brand3,
+    link: 'https://www.safetyjogger.com/',
+  },
+  { name: 'Ansell', image: brand6, link: 'https://www.ansell.com/' },
+  { name: 'Dupont', image: brand7, link: 'https://www.dupont.com/' },
+  { name: 'Uvex', image: brand8, link: 'https://www.uvex-safety.com/' },
+  { name: 'Honeywell', image: brand9, link: 'https://www.honeywell.com/' },
+  {
+    name: 'Sarena Textile',
+    image: brand10,
+    link: 'https://sarenapk.com/',
+  },
 ];
 
 const Brands = () => {
@@ -39,14 +55,19 @@ const Brands = () => {
               key={index}
               className="flex items-center justify-center bg-card rounded-3xl shadow-card p-6 border border-gray-200 dark:border-gray-700 transition-all hover:scale-105"
             >
-              <div className="w-36 h-30 flex items-center justify-center">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={brand.link}
+                className="w-36 h-30 flex items-center justify-center"
+              >
                 <img
                   src={brand.image}
                   alt={brand.name}
                   className="max-w-full max-h-full object-contain"
                   loading="lazy"
                 />
-              </div>
+              </a>
             </div>
           ))}
         </div>
