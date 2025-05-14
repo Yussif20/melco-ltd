@@ -9,8 +9,10 @@ const ShowProducts = () => {
   const isRtl = document.documentElement.dir === 'rtl';
   const navigate = useNavigate(); // For back navigation
 
-  // State for search input
+  // State for search input and pagination
   const [searchQuery, setSearchQuery] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
 
   // Fetch the category data
   const categoryData = productsData[category];
@@ -38,6 +40,12 @@ const ShowProducts = () => {
     product.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  // Pagination logic
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
+
   // Format the category title (e.g., "head-protection" -> "Head Protection")
   const formatCategoryTitle = (cat) => {
     return cat
@@ -46,13 +54,21 @@ const ShowProducts = () => {
       .join(' ');
   };
 
+  // Handle page changes with scroll to top
+  const handlePageChange = (page) => {
+    if (page > 0 && page <= totalPages) {
+      setCurrentPage(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+    }
+  };
+
   return (
     <section className="py-20 px-6 sm:px-10 lg:px-16 bg-gradient-to-b from-gray-50 to-white text-gray-900">
       <div className="max-w-7xl mx-auto">
         {/* Back Arrow */}
         <button
           onClick={() => navigate(-1)} // Go back to the previous page
-          className="mb-6 flex items-center text-[#243e87] hover:text-[#1b2e6b] transition-colors duration-200"
+          className="cursor-pointer mb-6 flex items-center text-[#243e87] hover:text-[#1b2e6b] transition-colors duration-200"
         >
           <svg
             className={`w-6 h-6 ${isRtl ? 'ml-2 rotate-180' : 'mr-2'}`}
@@ -71,28 +87,24 @@ const ShowProducts = () => {
           <span>{t('back')}</span>
         </button>
 
-        {/* Category Header Image */}
+        {/* Category Header Image with Title Overlay */}
         <div className="relative mb-12">
           <img
             src={headerImage}
             alt={`${category} Header`}
-            className="w-full rounded-lg shadow-lg"
+            className="w-full shadow-lg"
             style={{ maxHeight: '300px', objectFit: 'cover' }}
           />
           <div
-            className="absolute inset-0 bg-[#243e87] opacity-20"
+            className="absolute inset-0 bg-[#243e87] opacity-30"
             style={{ mixBlendMode: 'multiply' }}
           />
+          {/* Category Title */}
+          <h2 className="absolute inset-0 flex items-center justify-center text-3xl sm:text-4xl font-semibold text-white mb-6 text-center drop-shadow-lg">
+            {t(`products_${category.replace(/-/g, '_')}_title`) ||
+              formatCategoryTitle(category)}
+          </h2>
         </div>
-
-        {/* Category Title */}
-        <h2
-          className="text-3xl sm:text-4xl font-semibold text-[#243e87] mb-6 text-center"
-          // style={{ textAlign: isRtl ? 'right' : 'left' }}
-        >
-          {t(`products_${category.replace(/-/g, '_')}_title`) ||
-            formatCategoryTitle(category)}
-        </h2>
 
         {/* Search Bar */}
         <div className="mb-8 flex justify-center">
@@ -120,10 +132,11 @@ const ShowProducts = () => {
             </svg>
           </div>
         </div>
+
         {/* Products Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProducts.length > 0 ? (
-            filteredProducts.map((product, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+          {paginatedProducts.length > 0 ? (
+            paginatedProducts.map((product, index) => (
               <div
                 key={index}
                 className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center p-6"
@@ -147,6 +160,65 @@ const ShowProducts = () => {
             </div>
           )}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center space-x-2">
+            <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="p-2 bg-[#243e87] text-white rounded-full hover:bg-[#1b2e6b] transition-colors duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed cursor-pointer"
+            >
+              <svg
+                className={`w-6 h-6 ${isRtl ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page)}
+                className={`px-4 py-2 rounded-full ${
+                  currentPage === page
+                    ? 'bg-[#243e87] text-white'
+                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                } transition-colors duration-200 cursor-pointer`}
+              >
+                {page}
+              </button>
+            ))}
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="p-2 bg-[#243e87] text-white rounded-full hover:bg-[#1b2e6b] transition-colors duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed cursor-pointer"
+            >
+              <svg
+                className={`w-6 h-6 ${isRtl ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

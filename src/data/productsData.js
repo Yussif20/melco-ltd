@@ -1,5 +1,5 @@
 // Head Protection
-import headProtectionHeader from "../assets/category-headers/head-protection-header.png"; // Placeholder
+import headProtectionHeader from "../assets/category-headers/head.png"; // Placeholder
 import headProtection1 from "../assets/show-products/head-protection/head1.webp";
 import headProtection2 from "../assets/show-products/head-protection/head2.jpg";
 import headProtection3 from "../assets/show-products/head-protection/head3.jpg";
@@ -7,7 +7,7 @@ import headProtection4 from "../assets/show-products/head-protection/head4.jpeg"
 import headProtection5 from "../assets/show-products/head-protection/head5.jpeg";
 
 // Eye and Face Protection
-import eyeProtectionHeader from "../assets/category-headers/eye-protection-header.jpg"; // Placeholder
+import eyeProtectionHeader from "../assets/category-headers/eye.png"; // Placeholder
 import eyeProtection1 from "../assets/show-products/eye-protection/eye1.jpg";
 import eyeProtection2 from "../assets/show-products/eye-protection/eye2.avif";
 import eyeProtection3 from "../assets/show-products/eye-protection/eye3.jpg";
@@ -19,7 +19,7 @@ import eyeProtection8 from "../assets/show-products/eye-protection/eye8.jpg";
 import eyeProtection9 from "../assets/show-products/eye-protection/eye9.jpg";
 
 // Ear Protection
-import earProtectionHeader from "../assets/category-headers/ear-protection-header.jpg"; // Placeholder
+import earProtectionHeader from "../assets/category-headers/hear.jpg"; // Placeholder
 import earProtection1 from "../assets/show-products/ear-protection/ear1.webp";
 import earProtection2 from "../assets/show-products/ear-protection/ear2.jpeg";
 import earProtection3 from "../assets/show-products/ear-protection/ear3.avif";
@@ -31,7 +31,7 @@ import earProtection8 from "../assets/show-products/ear-protection/ear8.avif";
 import earProtection9 from "../assets/show-products/ear-protection/ear9.png";
 
 // Respiratory Protection
-import respProtectionHeader from "../assets/category-headers/resp-protection-header.jpg"; // Placeholder
+import respProtectionHeader from "../assets/category-headers/resp.jpg"; // Placeholder
 import respProtection1 from "../assets/show-products/resp-protection/resp1.png";
 import respProtection2 from "../assets/show-products/resp-protection/resp2.jpg";
 import respProtection3 from "../assets/show-products/resp-protection/resp3.jpg";
@@ -40,13 +40,15 @@ import respProtection5 from "../assets/show-products/resp-protection/resp5.avif"
 import respProtection6 from "../assets/show-products/resp-protection/resp6.avif";
 
 // Hand Protection
-import handProtectionHeader from "../assets/category-headers/hand-protection-header.jpg"; // Placeholder
+import handProtectionHeader from "../assets/category-headers/hand.png"; // Placeholder
 import handProtection1 from "../assets/show-products/hand-protection/hand1.png";
 import handProtection2 from "../assets/show-products/hand-protection/hand2.webp";
 import handProtection3 from "../assets/show-products/hand-protection/hand3.jpg";
+import handProtection4 from "../assets/show-products/hand-protection/hand4.png";
+import handProtection5 from "../assets/show-products/hand-protection/hand5.png";
 
 // Foot Protection
-import footProtectionHeader from "../assets/category-headers/foot-protection-header.jpg"; // Placeholder
+import footProtectionHeader from "../assets/category-headers/foot.png"; // Placeholder
 import footProtection1 from "../assets/show-products/foot-protection/foot1.png";
 import footProtection2 from "../assets/show-products/foot-protection/foot2.webp";
 import footProtection3 from "../assets/show-products/foot-protection/foot3.jpg";
@@ -68,9 +70,32 @@ import footProtection18 from "../assets/show-products/foot-protection/foot18.png
 import footProtection19 from "../assets/show-products/foot-protection/foot19.jpeg";
 import footProtection20 from "../assets/show-products/foot-protection/foot20.jpeg";
 import footProtection21 from "../assets/show-products/foot-protection/foot21.png";
+import footProtection22 from "../assets/show-products/foot-protection/foot22.png";
+import footProtection23 from "../assets/show-products/foot-protection/foot23.png";
+import footProtection24 from "../assets/show-products/foot-protection/foot24.png";
+import footProtection25 from "../assets/show-products/foot-protection/foot25.png";
+import footProtection26 from "../assets/show-products/foot-protection/foot26.jpg"; 
+import footProtection27 from "../assets/show-products/foot-protection/foot27.jpg";
+import footProtection28 from "../assets/show-products/foot-protection/foot28.jpg";
+import footProtection29 from "../assets/show-products/foot-protection/foot29.png";
+import footProtection30 from "../assets/show-products/foot-protection/foot30.jpg";
+import footProtection31 from "../assets/show-products/foot-protection/foot31.png";
+import footProtection32 from "../assets/show-products/foot-protection/foot32.png"; 
+import footProtection33 from "../assets/show-products/foot-protection/foot33.png";
+import footProtection34 from "../assets/show-products/foot-protection/foot34.png";
+import footProtection35 from "../assets/show-products/foot-protection/foot35.png";
+import footProtection36 from "../assets/show-products/foot-protection/foot36.png";
+import footProtection37 from "../assets/show-products/foot-protection/foot37.png";
+import footProtection38 from "../assets/show-products/foot-protection/foot38.png";   
+import footProtection39 from "../assets/show-products/foot-protection/foot39.png";
+import footProtection40 from "../assets/show-products/foot-protection/foot40.png";
+import footProtection41 from "../assets/show-products/foot-protection/foot41.webp";
+import footProtection42 from "../assets/show-products/foot-protection/foot42.png";
+import footProtection43 from "../assets/show-products/foot-protection/foot43.png";
+import footProtection44 from "../assets/show-products/foot-protection/foot44.png";
 
 // Body Protection
-import bodyProtectionHeader from "../assets/category-headers/body-protection-header.jpg"; // Placeholder
+import bodyProtectionHeader from "../assets/category-headers/body.png"; // Placeholder
 import bodyProtection1 from "../assets/show-products/body-protection/body1.webp";
 import bodyProtection2 from "../assets/show-products/body-protection/body2.jpg";
 import bodyProtection3 from "../assets/show-products/body-protection/body3.jpeg";
@@ -82,7 +107,7 @@ import bodyProtection8 from "../assets/show-products/body-protection/body8.png";
 import bodyProtection9 from "../assets/show-products/body-protection/body9.png";
 
 // Gas Protection
-import gasProtectionHeader from "../assets/category-headers/gas-protection-header.jpg"; // Placeholder
+import gasProtectionHeader from "../assets/category-headers/gas.jpg"; // Placeholder
 import gas1 from "../assets/show-products/gas-protection/gas1.jpeg";
 import gas2 from "../assets/show-products/gas-protection/gas2.webp";
 import gas3 from "../assets/show-products/gas-protection/gas3.webp";
@@ -270,6 +295,16 @@ const productsData = {
         name: "Safety Jogger SHIELD 4X43C",
         description: "hand_protection_desc_3",
         image: handProtection3
+      },
+      {
+        name: "Proimpacts 4X42CP",
+        description: "hand_protection_desc_4",
+        image: handProtection4
+      },
+      {
+        name: "Allflexdot 4131A",
+        description: "hand_protection_desc_5",
+        image: handProtection5
       }
     ]
   },
@@ -380,6 +415,122 @@ const productsData = {
         name: "Safety Jogger Bestrun S3",
         description: "foot_protection_desc_21",
         image: footProtection21
+      },
+      // New products from the catalog starting here
+      {
+        name: "MODULO S3S MID TLS",
+        description: "foot_protection_desc_22",
+        image: footProtection22
+      },
+      {
+        name: "MODULO S3S LOW TLS",
+        description: "foot_protection_desc_23",
+        image: footProtection23
+      },
+      {
+        name: "MODULO S3S MID",
+        description: "foot_protection_desc_24",
+        image: footProtection24
+      },
+      {
+        name: "MODULO S3S LOW",
+        description: "foot_protection_desc_25",
+        image: footProtection25
+      },
+      {
+        name: "MODULO ARMOR S3S LOW",
+        description: "foot_protection_desc_26",
+        image: footProtection26
+      },
+      {
+        name: "MODULO ARMOR S3S MID",
+        description: "foot_protection_desc_27",
+        image: footProtection27
+      },
+      {
+        name: "MODULO LE S3S LOW TG",
+        description: "foot_protection_desc_28",
+        image: footProtection28
+      },
+      {
+        name: "MODULO LE S3S MID TG",
+        description: "foot_protection_desc_29",
+        image: footProtection29
+      },
+      {
+        name: "X430 S3",
+        description: "foot_protection_desc_30",
+        image: footProtection30
+      },
+      {
+        name: "ULTIMA S3",
+        description: "foot_protection_desc_31",
+        image: footProtection31
+      },
+      {
+        name: "ALTAR S3 HIGH",
+        description: "foot_protection_desc_32",
+        image: footProtection32
+      },
+      {
+        name: "ALTAR S3 MID",
+        description: "foot_protection_desc_33",
+        image: footProtection33
+      },
+      {
+        name: "BASALT S7S",
+        description: "foot_protection_desc_34",
+        image: footProtection34
+      },
+      {
+        name: "X330 S3",
+        description: "foot_protection_desc_35",
+        image: footProtection35
+      },
+      {
+        name: "HEKLA S3S MID",
+        description: "foot_protection_desc_36",
+        image: footProtection36
+      },
+      {
+        name: "JUMPER-EH SB",
+        description: "foot_protection_desc_37",
+        image: footProtection37
+      },
+      {
+        name: "X430-EH SB",
+        description: "foot_protection_desc_38",
+        image: footProtection38
+      },
+      {
+        name: "X330-EH SB",
+        description: "foot_protection_desc_39",
+        image: footProtection39
+      },
+      {
+        name: "PLUTO-EH SB",
+        description: "foot_protection_desc_40",
+        image: footProtection40
+      },
+      {
+        name: "MARS-EH SB",
+        description: "foot_protection_desc_41",
+        image: footProtection41
+      },
+      {
+        name: "DAKAR-EH SB",
+        description: "foot_protection_desc_42",
+        image: footProtection42
+      },
+      {
+        name: "BESTBOY MF EH SB",
+        description: "foot_protection_desc_43",
+        image: footProtection43
+      },
+      {
+        name: "BESTRUN MF EH SB",
+        description: "foot_protection_desc_44",
+        image: footProtection44
       }
     ]
   },

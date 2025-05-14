@@ -3,12 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import headImage from '../assets/products/head.png';
-import eyeImage from '../assets/products/eye.jpg';
+import eyeImage from '../assets/products/eye.png';
 import earImage from '../assets/products/hear.jpg';
 import breatheImage from '../assets/products/resp.jpg';
-import handImage from '../assets/products/hand.jpg';
-import bodyImage from '../assets/products/body.jpg';
-import footImage from '../assets/products/foot.jpg';
+import handImage from '../assets/products/hand.png';
+import bodyImage from '../assets/products/body.png';
+import footImage from '../assets/products/foot.png';
 import gasImage from '../assets/products/gas.jpg';
 import AnimatedSection from './../utils/AnimatedSection';
 

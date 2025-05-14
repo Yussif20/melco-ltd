@@ -5,7 +5,7 @@ import innovationIcon from '../assets/values/innovation.png';
 import professionalismIcon from '../assets/values/professionalism.png';
 import partnershipIcon from '../assets/values/partnership.png';
 import sustainabilityIcon from '../assets/values/sustainability.png';
-import aboutTitleImage from '../assets/about-title.jpg';
+import aboutTitleImage from '../assets/vision-title.jpg';
 
 const AboutUs = () => {
   const { t } = useTranslation();
