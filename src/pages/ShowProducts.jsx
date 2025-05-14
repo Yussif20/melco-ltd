@@ -1,43 +1,111 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import productsData from '../data/productsData';
+import productsData from '../data/productsData'; // Adjust path as needed
 
 const ShowProducts = () => {
-  const { category } = useParams();
+  const { category } = useParams(); // Get category from URL (e.g., "head-protection")
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const products = productsData[category] || [];
+  const isRtl = document.documentElement.dir === 'rtl';
+  const navigate = useNavigate(); // For back navigation
 
-  // Map category ID to translation key for ar/en support
-  const categoryTranslationMap = {
-    'head-protection': 'head_protection',
-    'eye-and-face-protection': 'eye_face_protection',
-    'hearing-protection': 'hearing_protection',
-    'respiratory-protection': 'respiratory_protection',
-    'hand-protection': 'hand_protection',
-    'body-protection': 'body_protection',
-    'foot-protection': 'foot_protection',
-    'gas-detector': 'gas_detector',
-  };
-  const translationKey = categoryTranslationMap[category] || category;
-  const categoryTitle = t(translationKey);
+  // State for search input
+  const [searchQuery, setSearchQuery] = useState('');
 
-  // Navigate back to the categories page
-  const handleBackClick = () => {
-    navigate('/products');
+  // Fetch the category data
+  const categoryData = productsData[category];
+
+  // If category doesn't exist, show a fallback
+  if (!categoryData) {
+    return (
+      <section className="py-20 px-6 sm:px-10 lg:px-16 text-gray-900">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-semibold text-[#243e87] mb-4">
+            {t('category_not_found')}
+          </h2>
+          <p className="text-lg text-gray-600">
+            {t('category_not_found_desc')}
+          </p>
+        </div>
+      </section>
+    );
+  }
+
+  const { headerImage, products } = categoryData;
+
+  // Filter products based on search query
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  // Format the category title (e.g., "head-protection" -> "Head Protection")
+  const formatCategoryTitle = (cat) => {
+    return cat
+      .split('-')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
   };
 
   return (
-    <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-20 bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800">
-      <div className="relative max-w-7xl mx-auto">
-        <div className="flex items-center mb-8">
-          <button
-            onClick={handleBackClick}
-            className="cursor-pointer flex items-center text-[#243e87] dark:text-white hover:text-[#1F2937] dark:hover:text-gray-300 transition-colors duration-300"
+    <section className="py-20 px-6 sm:px-10 lg:px-16 bg-gradient-to-b from-gray-50 to-white text-gray-900">
+      <div className="max-w-7xl mx-auto">
+        {/* Back Arrow */}
+        <button
+          onClick={() => navigate(-1)} // Go back to the previous page
+          className="mb-6 flex items-center text-[#243e87] hover:text-[#1b2e6b] transition-colors duration-200"
+        >
+          <svg
+            className={`w-6 h-6 ${isRtl ? 'ml-2 rotate-180' : 'mr-2'}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          <span>{t('back')}</span>
+        </button>
+
+        {/* Category Header Image */}
+        <div className="relative mb-12">
+          <img
+            src={headerImage}
+            alt={`${category} Header`}
+            className="w-full rounded-lg shadow-lg"
+            style={{ maxHeight: '300px', objectFit: 'cover' }}
+          />
+          <div
+            className="absolute inset-0 bg-[#243e87] opacity-20"
+            style={{ mixBlendMode: 'multiply' }}
+          />
+        </div>
+
+        {/* Category Title */}
+        <h2
+          className="text-3xl sm:text-4xl font-semibold text-[#243e87] mb-6 text-center"
+          // style={{ textAlign: isRtl ? 'right' : 'left' }}
+        >
+          {t(`products_${category.replace(/-/g, '_')}_title`) ||
+            formatCategoryTitle(category)}
+        </h2>
+
+        {/* Search Bar */}
+        <div className="mb-8 flex justify-center">
+          <div className="relative w-full max-w-xs">
+            <input
+              type="text"
+              placeholder={t('search_products')}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#243e87] focus:border-transparent shadow-sm text-gray-900 placeholder-gray-500 transition-all duration-200"
+            />
             <svg
-              className="w-6 h-6 mr-2"
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -47,47 +115,38 @@ const ShowProducts = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M15 19l-7-7 7-7"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
-            <span className="text-lg font-semibold">
-              {t('back_to_categories')}
-            </span>
-          </button>
+          </div>
         </div>
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-[#243e87] dark:text-white text-center mb-16 tracking-tight animate-slide-up font-heading">
-          {categoryTitle}
-        </h2>
-        {products.length === 0 ? (
-          <p className="text-center text-gray-600 dark:text-gray-300">
-            {t('no_products_found')}
-          </p>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-            {products.map((product, index) => (
+        {/* Products Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product, index) => (
               <div
                 key={index}
-                className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 flex flex-col items-center h-[30rem] justify-between"
+                className="bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center p-6"
               >
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-64 object-contain rounded-lg mb-4"
+                  className="w-full h-48 object-contain mb-4"
                 />
-                <div className="flex flex-col justify-between flex-grow">
-                  <div>
-                    <h3 className="text-xl font-semibold text-[#243e87] dark:text-white mb-2 text-center font-heading">
-                      {product.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-300 text-center">
-                      {t(product.description)}
-                    </p>
-                  </div>
-                </div>
+                <h3 className="text-lg font-medium text-[#243e87] mb-2">
+                  {product.name}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {t(product.description)}
+                </p>
               </div>
-            ))}
-          </div>
-        )}
+            ))
+          ) : (
+            <div className="col-span-full text-center text-gray-600">
+              {t('no_products_found')}
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );
