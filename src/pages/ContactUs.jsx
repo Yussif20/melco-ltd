@@ -85,7 +85,7 @@ function ContactUs() {
               </h2>
               <div className="space-y-4 text-gray-700 dark:text-gray-300">
                 <a
-                  href="mailto:mohamed@melco-ltd.com"
+                  href="mailto:Ahmed@melco-ltd.com"
                   className="flex items-center"
                 >
                   <img
@@ -93,15 +93,15 @@ function ContactUs() {
                     title="email picture"
                     className="w-6 h-6 mr-3"
                   />
-                  mohamed@melco-ltd.com
+                  Ahmed@melco-ltd.com
                 </a>
-                <a href="tel:+966535852438" className="flex items-center">
+                <a href="tel:+966553653329" className="flex items-center">
                   <img
                     src={phoneIcon}
                     title="phone picture"
                     className="w-6 h-6 mr-3"
                   />
-                  +966535852438
+                  +966553653329
                 </a>
                 <p className="flex items-start">
                   <img
@@ -114,7 +114,9 @@ function ContactUs() {
               </div>
               <div className="flex space-x-4 mt-6">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/melcosa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-700 hover:bg-blue-800 text-white transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2"
                   aria-label="LinkedIn"
                 >
