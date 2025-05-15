@@ -20,6 +20,7 @@
 
 /* Apply fonts and variables to body */
 body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
   @apply bg-[var(--background)] text-[var(--foreground)];
   font-family: var(--font-inter); /* Default to Inter font */
 }

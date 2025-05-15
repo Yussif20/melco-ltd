@@ -46,6 +46,13 @@ import handProtection2 from "../assets/show-products/hand-protection/hand2.webp"
 import handProtection3 from "../assets/show-products/hand-protection/hand3.jpg";
 import handProtection4 from "../assets/show-products/hand-protection/hand4.png";
 import handProtection5 from "../assets/show-products/hand-protection/hand5.png";
+import handProtection6 from "../assets/show-products/hand-protection/hand6.jpg";
+import handProtection7 from "../assets/show-products/hand-protection/hand7.jpg";
+import handProtection8 from "../assets/show-products/hand-protection/hand8.jpeg";
+import handProtection9 from "../assets/show-products/hand-protection/hand9.jpg";
+import handProtection10 from "../assets/show-products/hand-protection/hand10.jpg";
+import handProtection11 from "../assets/show-products/hand-protection/hand11.jpg";
+import handProtection12 from "../assets/show-products/hand-protection/hand12.jpeg";
 
 // Foot Protection
 import footProtectionHeader from "../assets/category-headers/foot.png"; // Placeholder
@@ -305,6 +312,41 @@ const productsData = {
         name: "Allflexdot 4131A",
         description: "hand_protection_desc_5",
         image: handProtection5
+      },
+      {
+        name: "EDGE 48 - 128 (4121)",
+        description: "hand_protection_desc_6",
+        image: handProtection6
+      },
+      {
+        name: "EDGE 48 - 305 (2142)",
+        description: "hand_protection_desc_7",
+        image: handProtection7
+      },
+      {
+        name: "EDGE 48 - 706 (4X43C)",
+        description: "hand_protection_desc_8",
+        image: handProtection8
+      },
+      {
+        name: "EDGE 48 - 205",
+        description: "hand_protection_desc_9",
+        image: handProtection9
+      },
+      {
+        name: "EDGE 48 - 701 (4342)",
+        description: "hand_protection_desc_10",
+        image: handProtection10
+      },
+      {
+        name: "EDGE 48 - 216 (Heavy Duty Welding Glove)",
+        description: "hand_protection_desc_11",
+        image: handProtection11
+      },
+      {
+        name: "HyFlex 11 - 840 (4231)",
+        description: "hand_protection_desc_12",
+        image: handProtection12
       }
     ]
   },
