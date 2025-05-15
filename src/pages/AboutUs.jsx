@@ -5,7 +5,7 @@ import innovationIcon from '../assets/values/innovation.png';
 import professionalismIcon from '../assets/values/professionalism.png';
 import partnershipIcon from '../assets/values/partnership.png';
 import sustainabilityIcon from '../assets/values/sustainability.png';
-import aboutTitleImage from '../assets/vision-title.jpg';
+import aboutTitleVideo from '../assets/about-title.mp4';
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -13,11 +13,14 @@ const AboutUs = () => {
 
   return (
     <section id="about" className="bg-white text-gray-900">
-      {/* Full-width Header Image with adjusted height for large screens */}
+      {/* Full-width Header Video with adjusted height for large screens */}
       <div className="w-screen relative overflow-hidden">
-        <img
-          src={aboutTitleImage}
-          alt="About Milco"
+        <video
+          src={aboutTitleVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-auto lg:h-80 object-cover transform transition-transform duration-500 hover:scale-105"
         />
         {/* Light brand-colored overlay */}
@@ -52,10 +55,7 @@ const AboutUs = () => {
 
           {/* Values */}
           <div className="animate-fade-in delay-200">
-            <h3
-              className="text-2xl sm:text-3xl font-semibold text-[#243e87] dark:text-white mb-10 text-center lg:text-left"
-              style={{ textAlign: isRtl ? 'right' : 'left' }}
-            >
+            <h3 className="text-2xl sm:text-3xl font-semibold text-[#243e87] dark:text-white mb-10 text-center">
               {t('values_title')}
             </h3>
             <div className="flex flex-col w-full items-center justify-center gap-8">

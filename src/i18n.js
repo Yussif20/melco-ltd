@@ -197,7 +197,7 @@ const resources = {
       footer_email: 'Email',
       footer_phone: 'Phone',
       footer_social_title: 'Follow Us',
-      footer_company_info: 'Melco is a leading provider of personal protective equipment, ensuring safety and quality for all industries.',
+      footer_company_info: 'MILCO — where safety meets quality, protecting those who shape tomorrow',
       footer_links_title: 'Links',
       footer_contact_title: 'Contact',
       back_to_categories: 'Back to Categories'
@@ -399,7 +399,7 @@ const resources = {
       footer_email: 'البريد الإلكتروني',
       footer_phone: 'الهاتف',
       footer_social_title: 'تابعنا',
-      footer_company_info: 'ميلكو هي المزود الرائد لمعدات الحماية الشخصية، مما يضمن السلامة والجودة لجميع الصناعات.',
+      footer_company_info: 'ميلكو، حيث تلتقي السلامة بالجودة، لنحمي من يصنعون الغد.',
       footer_links_title: 'روابط',
       footer_contact_title: 'اتصل بنا',
       back_to_categories: 'العودة إلى الفئات'
