@@ -71,25 +71,43 @@ const Products = () => {
       id="products"
       className="py-12 sm:py-16 px-4 sm:px-6 lg:px-20 bg-white dark:from-gray-900 dark:to-gray-800"
     >
+      <meta
+        name="description"
+        content={t(
+          'products_description',
+          'Explore Melco (ميلكو) safety equipment, including head, eye, hand, and respiratory protection at masterequiment.com.'
+        )}
+      />
+      <meta
+        name="keywords"
+        content="Melco, ميلكو, safety equipment, protective gear, head protection, hand protection, respiratory protection"
+      />
+      <link rel="canonical" href="https://masterequiment.com/products" />
+      <h1 className="sr-only">
+        {t(
+          'products_page_title',
+          'Melco Safety Equipment - Protective Gear Categories'
+        )}
+      </h1>
       <div className="relative max-w-7xl mx-auto">
         <AnimatedSection>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product, index) => (
               <div
-                key={index}
+                key={product.id}
                 className="group rounded-2xl shadow-xl p-6 w-full max-w-xs mx-auto transform hover:-translate-y-2 transition-all duration-500"
               >
                 <img
                   src={product.image}
-                  alt={t(product.name)}
+                  alt={t(`${product.name}_alt`, `${t(product.name)} by Melco`)}
                   className="w-full h-48 object-cover rounded-t-2xl group-hover:opacity-90 transition-opacity duration-200"
                   loading="lazy"
                 />
                 <div className="pt-4 flex flex-col justify-between h-[calc(100%-12rem)]">
                   <div>
-                    <h3 className="text-lg font-semibold text-[#243e87] dark:text-[#1F2937] text-center mb-2">
+                    <h2 className="text-lg font-semibold text-[#243e87] dark:text-[#1F2937] text-center mb-2">
                       {t(product.name)}
-                    </h3>
+                    </h2>
                     <p className="text-sm text-gray-600 dark:text-gray-300 text-center">
                       {t(product.description)}
                     </p>
@@ -97,6 +115,9 @@ const Products = () => {
                   <Link
                     to={`/show-products/${product.id}`}
                     className="w-full mt-4 px-4 py-2 bg-[#1F2937] text-white rounded-full hover:bg-[#1F2937]/80 transition-all duration-300 transform hover:scale-105 text-center"
+                    aria-label={t('view_category', {
+                      category: t(product.name),
+                    })}
                   >
                     {t('more_button')}
                   </Link>

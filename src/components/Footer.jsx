@@ -16,43 +16,44 @@ const Footer = () => {
       dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}
     >
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-10">
-        {/* Company Info */}
         <p className="text-base sm:text-lg text-gray-200 leading-relaxed max-w-xl text-center">
           {t('footer_company_info')}
         </p>
 
-        {/* Navigation Links */}
-        <div className="flex flex-col items-center gap-6 w-full">
-          <h3 className="text-xl sm:text-2xl font-semibold text-white border-b-2 border-[#243e87] pb-2">
+        <nav className="flex flex-col items-center gap-6 w-full">
+          <h2 className="text-xl sm:text-2xl font-semibold text-white border-b-2 border-[#243e87] pb-2">
             {t('footer_links_title')}
-          </h3>
+          </h2>
           <div className="flex flex-wrap justify-center gap-6">
             <Link
               to="/"
-              className="text-sm sm:text-base font-medium text-gray-300  transition-colors duration-300 hover:underline"
+              className="text-sm sm:text-base font-medium text-gray-300 transition-colors duration-300 hover:underline"
+              aria-label={t('nav_home')}
             >
               {t('nav_home')}
             </Link>
             <Link
               to="/about"
-              className="text-sm sm:text-base font-medium text-gray-300  transition-colors duration-300 hover:underline"
+              className="text-sm sm:text-base font-medium text-gray-300 transition-colors duration-300 hover:underline"
+              aria-label={t('nav_about')}
             >
               {t('nav_about')}
             </Link>
             <Link
               to="/products"
-              className="text-sm sm:text-base font-medium text-gray-300  transition-colors duration-300 hover:underline"
+              className="text-sm sm:text-base font-medium text-gray-300 transition-colors duration-300 hover:underline"
+              aria-label={t('nav_products')}
             >
               {t('nav_products')}
             </Link>
             <Link
               to="/contact"
-              className="text-sm sm:text-base font-medium text-gray-300  transition-colors duration-300 hover:underline"
+              className="text-sm sm:text-base font-medium text-gray-300 transition-colors duration-300 hover:underline"
+              aria-label={t('nav_contact')}
             >
               {t('nav_contact')}
             </Link>
           </div>
-          {/* Language Toggle */}
           <div className="flex items-center gap-4 mt-4">
             <span className="text-sm sm:text-base font-medium text-gray-300">
               AR
@@ -63,6 +64,7 @@ const Footer = () => {
                 checked={i18n.language === 'en'}
                 onChange={toggleLanguage}
                 className="sr-only peer"
+                aria-label={t('language_toggle')}
               />
               <div className="w-11 h-6 bg-gray-500 rounded-full peer-checked:bg-[#243e87] transition-colors duration-300"></div>
               <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-transform duration-300 peer-checked:translate-x-5"></div>
@@ -71,20 +73,25 @@ const Footer = () => {
               EN
             </span>
           </div>
-        </div>
+        </nav>
 
-        {/* Contact Info */}
         <div className="flex flex-col items-center gap-4">
-          <h3 className="text-xl sm:text-2xl font-semibold text-white border-b-2 border-[#243e87] pb-2">
+          <h2 className="text-xl sm:text-2xl font-semibold text-white border-b-2 border-[#243e87] pb-2">
             {t('footer_contact_title')}
-          </h3>
+          </h2>
           <p className="text-sm sm:text-base text-gray-300">
             {t('footer_email')}
-            <a href="mailto:Ahmed@melco-ltd.com">: Ahmed@melco-ltd.com</a>
+            <a href="mailto:Ahmed@melco-ltd.com" aria-label={t('footer_email')}>
+              {' '}
+              Ahmed@melco-ltd.com
+            </a>
           </p>
           <p className="text-sm sm:text-base text-gray-300">
             {t('footer_phone')}
-            <a href="tel:+966553653329">: +966553653329</a>
+            <a href="tel:+966553653329" aria-label={t('footer_phone')}>
+              {' '}
+              +966553653329
+            </a>
           </p>
         </div>
       </div>

@@ -63,10 +63,11 @@ const ProductDetail = () => {
   if (!product) {
     return (
       <section className="py-16 px-4 sm:px-6 lg:px-20 bg-background">
+        <meta name="robots" content="noindex" />
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#243e87] dark:text-white animate-slide-up">
+          <h1 className="text-3xl font-bold text-[#243e87] dark:text-white animate-slide-up">
             {t('product_not_found')}
-          </h2>
+          </h1>
           <Link
             to="/products"
             className="mt-6 inline-flex items-center px-6 py-3 bg-[#1F2937] text-white rounded-full hover:bg-[#1F2937]/80 transition-all transform hover:scale-105 animate-slide-up delay-100"
@@ -97,12 +98,29 @@ const ProductDetail = () => {
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-20 bg-background">
-      {/* Product Name Heading */}
-      <h1 className="text-4xl sm:text-5xl font-semibold text-[#243e87] dark:text-white tracking-tight  text-center mb-12 animate-slide-up">
+      <meta
+        name="description"
+        content={t(
+          `${product.name}_meta_desc`,
+          `Discover ${t(
+            product.name
+          )} by Melco (ميلكو) - high-quality safety equipment at masterequiment.com.`
+        )}
+      />
+      <meta
+        name="keywords"
+        content={`Melco, ميلكو, ${t(
+          product.name
+        )}, safety equipment, protective gear`}
+      />
+      <link
+        rel="canonical"
+        href={`https://masterequiment.com/show-products/${product.name}`}
+      />
+      <h1 className="text-4xl sm:text-5xl font-semibold text-[#243e87] dark:text-white tracking-tight text-center mb-12 animate-slide-up">
         {t(product.name)}
       </h1>
 
-      {/* Back Button */}
       <Link
         to="/products"
         className={`fixed top-20 ${
@@ -126,22 +144,19 @@ const ProductDetail = () => {
         </svg>
       </Link>
 
-      {/* Main Content */}
       <div className="max-w-4xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Product Image */}
           <div className="flex justify-center animate-slide-up delay-200">
             <div className="bg-card rounded-3xl shadow-card p-4">
               <img
                 src={product.image}
-                alt={t(product.name)}
+                alt={t(`${product.name}_alt`, `${t(product.name)} by Melco`)}
                 className="w-full h-96 sm:h-[32rem] object-contain transition-all duration-300 hover:scale-[1.03]"
                 loading="lazy"
               />
             </div>
           </div>
 
-          {/* Product Details */}
           <div className="flex flex-col justify-center animate-slide-up delay-300">
             <div className="bg-gradient-card rounded-3xl shadow-card p-8">
               <div
@@ -153,7 +168,7 @@ const ProductDetail = () => {
                   {t(product.description)}
                 </p>
               </div>
-              <div className="pt-6 ">
+              <div className="pt-6">
                 <p className="text-base sm:text-lg text-foreground leading-relaxed text-center">
                   {t(`${product.name}_details`)}
                 </p>

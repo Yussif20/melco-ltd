@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import AnimatedSection from '../utils/AnimatedSection';
@@ -17,7 +17,6 @@ function ContactUs() {
   const [status, setStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Initialize EmailJS with Public Key
   useEffect(() => {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
     if (publicKey) {
@@ -29,56 +28,72 @@ function ContactUs() {
     }
   }, []);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const handleChange = useCallback((e) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      setIsSubmitting(true);
 
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
-    if (!serviceId || !templateId) {
-      setStatus('error');
-      console.error('Missing EmailJS Service ID or Template ID in .env file.');
-      setIsSubmitting(false);
-      setTimeout(() => setStatus(null), 5000);
-      return;
-    }
+      if (!serviceId || !templateId) {
+        setStatus('error');
+        console.error(
+          'Missing EmailJS Service ID or Template ID in .env file.'
+        );
+        setIsSubmitting(false);
+        setTimeout(() => setStatus(null), 5000);
+        return;
+      }
 
-    emailjs
-      .send(serviceId, templateId, formData)
-      .then(
-        () => {
-          setStatus('success');
-          setFormData({
-            from_name: '',
-            from_email: '',
-            subject: '',
-            message: '',
-          });
-          setTimeout(() => setStatus(null), 5000);
-        },
-        (error) => {
-          setStatus('error');
-          console.error('EmailJS error:', error.text || error);
-          setTimeout(() => setStatus(null), 5000);
-        }
-      )
-      .finally(() => setIsSubmitting(false));
-  };
+      emailjs
+        .send(serviceId, templateId, formData)
+        .then(
+          () => {
+            setStatus('success');
+            setFormData({
+              from_name: '',
+              from_email: '',
+              subject: '',
+              message: '',
+            });
+            setTimeout(() => setStatus(null), 5000);
+          },
+          (error) => {
+            setStatus('error');
+            console.error('EmailJS error:', error.text || error);
+            setTimeout(() => setStatus(null), 5000);
+          }
+        )
+        .finally(() => setIsSubmitting(false));
+    },
+    [formData]
+  );
 
   return (
     <section className="relative bg-gray-100 dark:bg-gray-900 py-16">
+      <meta
+        name="description"
+        content={t(
+          'contact_description',
+          'Contact Melco (ميلكو) for safety equipment inquiries. Reach out via email, phone, or our form at masterequiment.com/contact.'
+        )}
+      />
+      <meta
+        name="keywords"
+        content="Melco, ميلكو, contact us, safety equipment, protective gear"
+      />
+      <link rel="canonical" href="https://masterequiment.com/contact" />
       <AnimatedSection>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-[#243e87] dark:text-white text-center mb-12">
             {t('contact_title')}
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Info */}
             <div className="flex flex-col justify-center">
               <h2 className="text-2xl font-semibold text-[#243e87] dark:text-[#1F2937] mb-6">
                 {t('footer_contact')}
@@ -90,24 +105,27 @@ function ContactUs() {
                 >
                   <img
                     src={mailIcon}
-                    title="email picture"
+                    alt={t('email_icon_alt', 'Email Icon')}
                     className="w-6 h-6 mr-3"
+                    loading="lazy"
                   />
                   Ahmed@melco-ltd.com
                 </a>
                 <a href="tel:+966553653329" className="flex items-center">
                   <img
                     src={phoneIcon}
-                    title="phone picture"
+                    alt={t('phone_icon_alt', 'Phone Icon')}
                     className="w-6 h-6 mr-3"
+                    loading="lazy"
                   />
                   +966553653329
                 </a>
                 <p className="flex items-start">
                   <img
                     src={placeIcon}
-                    title="place picture"
+                    alt={t('place_icon_alt', 'Location Icon')}
                     className="w-6 h-6 mr-3"
+                    loading="lazy"
                   />
                   {t('contact_place')}
                 </p>
@@ -118,7 +136,7 @@ function ContactUs() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-700 hover:bg-blue-800 text-white transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2"
-                  aria-label="LinkedIn"
+                  aria-label={t('linkedin_label', 'Melco LinkedIn Profile')}
                 >
                   <svg
                     className="w-5 h-5"
@@ -130,12 +148,11 @@ function ContactUs() {
                 </a>
               </div>
             </div>
-            {/* Contact Form */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
               <h2 className="text-2xl font-semibold text-[#243e87] dark:text-[#1F2937] mb-6">
                 {t('contact_form_title')}
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <div onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
                     htmlFor="from_name"
@@ -209,7 +226,8 @@ function ContactUs() {
                   ></textarea>
                 </div>
                 <button
-                  type="submit"
+                  type="button"
+                  onClick={handleSubmit}
                   disabled={isSubmitting}
                   className="w-full bg-[#1F2937] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#1F2937]/80 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105"
                   aria-label={t('contact_form_submit')}
@@ -218,7 +236,7 @@ function ContactUs() {
                     ? t('contact_form_sending')
                     : t('contact_form_submit')}
                 </button>
-              </form>
+              </div>
               {status === 'success' && (
                 <div className="mt-4 p-4 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg">
                   {t('contact_form_success')}

@@ -1,7 +1,6 @@
 import React from 'react';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-// Import brand images
 import brand1 from '../assets/brands/3m.png';
 import brand2 from '../assets/brands/bw-technologies.svg';
 import brand3 from '../assets/brands/safety-jogger.png';
@@ -13,7 +12,6 @@ import brand8 from '../assets/brands/uvex.png';
 import brand9 from '../assets/brands/honeywell.png';
 import brand10 from '../assets/brands/sarena-textile.jpg';
 
-// Define the brands array
 const brands = [
   { name: '3M', image: brand1, link: 'https://www.3m.com/' },
   {
@@ -36,23 +34,22 @@ const brands = [
   { name: 'Dupont', image: brand7, link: 'https://www.dupont.com/' },
   { name: 'Uvex', image: brand8, link: 'https://www.uvex-safety.com/' },
   { name: 'Honeywell', image: brand9, link: 'https://www.honeywell.com/' },
-  {
-    name: 'Sarena Textile',
-    image: brand10,
-    link: 'https://sarenapk.com/',
-  },
+  { name: 'Sarena Textile', image: brand10, link: 'https://sarenapk.com/' },
 ];
 
 const Brands = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-20 bg-background">
+      <h2 className="sr-only">
+        {t('brands_title', 'Our Trusted Safety Equipment Brands')}
+      </h2>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 animate-slide-up delay-200 max-sm:justify-center">
-          {brands.map((brand, index) => (
+          {brands.map((brand) => (
             <div
-              key={index}
+              key={brand.name}
               className="flex items-center justify-center bg-card rounded-3xl shadow-card p-6 border border-gray-200 dark:border-gray-700 transition-all hover:scale-105"
             >
               <a
@@ -60,10 +57,11 @@ const Brands = () => {
                 rel="noopener noreferrer"
                 href={brand.link}
                 className="w-36 h-30 flex items-center justify-center"
+                aria-label={t('brand_link', { name: brand.name })}
               >
                 <img
                   src={brand.image}
-                  alt={brand.name}
+                  alt={t('brand_alt', { name: brand.name })}
                   className="max-w-full max-h-full object-contain"
                   loading="lazy"
                 />

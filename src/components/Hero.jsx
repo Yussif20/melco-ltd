@@ -14,9 +14,11 @@ function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
         onError={(e) => console.error('Video failed to load:', e)}
+        poster="/path-to-poster-image.jpg"
+        loading="lazy"
       >
         <source src={miningVideo} type="video/mp4" />
-        Your browser does not support the video tag.
+        {t('video_unsupported')}
       </video>
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="absolute inset-0 flex items-center justify-center z-10">
@@ -30,6 +32,7 @@ function Hero() {
           <Link
             to="/products"
             className="inline-block bg-[#1F2937] text-white px-8 py-4 text-lg font-semibold rounded-md hover:bg-[#1F2937]/80 transition-all duration-300 transform hover:scale-105 shadow-[0_4px_8px_rgba(0,0,0,0.15)]"
+            aria-label={t('hero_button')}
           >
             {t('hero_button')}
           </Link>

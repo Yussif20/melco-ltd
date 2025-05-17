@@ -197,7 +197,7 @@ const resources = {
       footer_email: 'Email',
       footer_phone: 'Phone',
       footer_social_title: 'Follow Us',
-      footer_company_info: 'MILCO — where safety meets quality, protecting those who shape tomorrow',
+      footer_company_info: 'Melco — where safety meets quality, protecting those who shape tomorrow',
       footer_links_title: 'Links',
       footer_contact_title: 'Contact',
       back_to_categories: 'Back to Categories'

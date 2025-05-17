@@ -1,25 +1,31 @@
 import AnimatedSection from '../utils/AnimatedSection';
 import Hero from '../components/Hero';
 import Brands from '../components/Brands';
-// import Stats from './../components/Stats';
-// import Testimonials from './../components/Testimonials';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <AnimatedSection>
-        <Hero />
+        <div>
+          <h1 className="sr-only">
+            {t('home_title', 'Melco - Safety Equipment & Protective Gear')}
+          </h1>
+          <meta
+            name="description"
+            content={t(
+              'home_description',
+              'Explore Melco safety equipment, including protective gear and hand protection solutions at masterequiment.com.'
+            )}
+          />
+          <Hero />
+        </div>
       </AnimatedSection>
       <AnimatedSection>
         <Brands />
       </AnimatedSection>
-
-      {/* <AnimatedSection>
-        <Testimonials />
-      </AnimatedSection>
-      <AnimatedSection>
-        <Stats />
-      </AnimatedSection> */}
     </>
   );
 };

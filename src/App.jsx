@@ -18,7 +18,7 @@ import ShowProducts from './pages/ShowProducts';
 const ScrollToTop = () => {
   const location = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location]);
 
   return null;
@@ -32,6 +32,7 @@ const App = () => {
       const currentLang = i18next.language;
       const direction = currentLang === 'ar' ? 'rtl' : 'ltr';
       document.documentElement.dir = direction;
+      document.documentElement.lang = currentLang;
     };
 
     handleDirection();
@@ -43,9 +44,11 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/">
       <div
-        className={`flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 `}
+        className={`flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 ${
+          i18n.language === 'ar' ? 'font-tajawal' : 'font-inter'
+        }`}
       >
         <Header />
         <main className="flex-1">
