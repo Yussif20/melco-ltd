@@ -191,6 +191,13 @@ const resources = {
       years_experience: 'Years of Experience',
       satisfied_clients: 'Satisfied Clients',
       products_sold: 'Products Sold',
+      //Company Profile 
+      "company_profile_title": "Download Our Company Profile",
+      "company_profile_text": "Discover Melco and our dedication to top-tier safety equipment and protective gear solutions.",
+      "company_profile_description": "Download the Melco (ميلكو) company profile PDF to learn more about our safety equipment and protective gear solutions at masterequiment.com.",
+      "download_button": "Download PDF",
+      "download_company_profile": "Download Melco Company Profile PDF",
+      "video_unsupported": "Your browser does not support the video tag.",
       // Footer
       copyright: '© 2025 All rights reserved.',
       footer_nav_title: 'Quick Links',
@@ -393,6 +400,13 @@ const resources = {
       years_experience: 'سنوات من الخبرة',
       satisfied_clients: 'عملاء راضون',
       products_sold: 'منتجات تم بيعها',
+      //Company Profile section
+      "company_profile_title": "تحميل ملف تعريف الشركة",
+      "company_profile_text": "اكتشف ميلكو وتفانينا في تقديم معدات الحماية والسلامة عالية الجودة.",
+      "company_profile_description": "قم بتحميل ملف تعريف شركة ميلكو (ميلكو) بتنسيق PDF لمعرفة المزيد عن حلول معدات الحماية والسلامة لدينا على masterequiment.com.",
+      "download_button": "تحميل PDF",
+      "download_company_profile": "تحميل ملف تعريف شركة ميلكو PDF",
+      "video_unsupported": "متصفحك لا يدعم علامة الفيديو.",
       // Footer
       copyright: '© 2025 جميع الحقوق محفوظة',
       footer_nav_title: 'روابط سريعة',

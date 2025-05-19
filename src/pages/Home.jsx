@@ -2,6 +2,7 @@ import AnimatedSection from '../utils/AnimatedSection';
 import Hero from '../components/Hero';
 import Brands from '../components/Brands';
 import { useTranslation } from 'react-i18next';
+import CompanyProfileSection from '../components/CompanyProfileSection';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -25,6 +26,9 @@ const Home = () => {
       </AnimatedSection>
       <AnimatedSection>
         <Brands />
+      </AnimatedSection>
+      <AnimatedSection>
+        <CompanyProfileSection />
       </AnimatedSection>
     </>
   );
