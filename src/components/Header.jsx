@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header
-      className="bg-gray-200 w-full border-b border-gray-300 shadow-lg px-4 sm:px-10 lg:px-20 py-4 sm:py-6"
+      className="bg-gray-50 w-full border-b border-gray-300 shadow-lg px-4 sm:px-10 lg:px-20 py-4 sm:py-6"
       dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
