@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import companyProfilePDF from '../assets/logo.png';
+import companyProfilePDF from '../assets/melco-profile.pdf';
 
 const CompanyProfileSection = () => {
   const { t } = useTranslation();

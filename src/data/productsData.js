@@ -353,76 +353,76 @@ const productsData = {
   "foot-protection": {
     headerImage: footProtectionHeader,
     products: [
-      {
-        name: "Red Wing Style 3210 Men's Oxford",
-        description: "foot_protection_desc_1",
-        image: footProtection1
-      },
-      {
-        name: "Red Wing Style 6338 Men's Athletics",
-        description: "foot_protection_desc_2",
-        image: footProtection2
-      },
-      {
-        name: "Red Wing Style 6670 Men's TruHiker 6-Inch Hiker Boot",
-        description: "foot_protection_desc_3",
-        image: footProtection3
-      },
-      {
-        name: "Red Wing Style 2233 Men's Supersole 8-Inch Boot",
-        description: "foot_protection_desc_4",
-        image: footProtection4
-      },
-      {
-        name: "Red Wing Style 8264 Men's 9-Inch Pull-On Boot",
-        description: "foot_protection_desc_5",
-        image: footProtection5
-      },
-      {
-        name: "Red Wing Style 3207 Men's Petroking 8-Inch Boot",
-        description: "foot_protection_desc_6",
-        image: footProtection6
-      },
-      {
-        name: "Red Wing Style 6716 Men's Cross Lite Oxford",
-        description: "foot_protection_desc_7",
-        image: footProtection7
-      },
-      {
-        name: "Red Wing Style 6721 Men's Cross Lite Slip-On",
-        description: "foot_protection_desc_8",
-        image: footProtection8
-      },
-      {
-        name: "Red Wing Style 6722 Men's Cross Lite Slip-On",
-        description: "foot_protection_desc_9",
-        image: footProtection9
-      },
-      {
-        name: "Red Wing Style 6714 Men's Cross Lite Chukka",
-        description: "foot_protection_desc_10",
-        image: footProtection10
-      },
-      {
-        name: "Red Wing Style 8212 Men's Supersole 5-Inch Boot",
-        description: "foot_protection_desc_11",
-        image: footProtection11
-      },
-      {
-        name: "Red Wing Style 8231 Men's 11-Inch Pull-On Boot",
-        description: "foot_protection_desc_12",
-        image: footProtection12
-      },
-      {
-        name: "Red Wing Style 6719 Men's Cross Lite Chukka",
-        description: "foot_protection_desc_13",
-        image: footProtection13
-      },
-      {
-        name: "Red Wing Style 3229 Men's Petroking 8-Inch Boot",
-        description: "foot_protection_desc_14",
-        image: footProtection14
-      },
+      // {
+      //   name: "Red Wing Style 3210 Men's Oxford",
+      //   description: "foot_protection_desc_1",
+      //   image: footProtection1
+      // },
+      // {
+      //   name: "Red Wing Style 6338 Men's Athletics",
+      //   description: "foot_protection_desc_2",
+      //   image: footProtection2
+      // },
+      // {
+      //   name: "Red Wing Style 6670 Men's TruHiker 6-Inch Hiker Boot",
+      //   description: "foot_protection_desc_3",
+      //   image: footProtection3
+      // },
+      // {
+      //   name: "Red Wing Style 2233 Men's Supersole 8-Inch Boot",
+      //   description: "foot_protection_desc_4",
+      //   image: footProtection4
+      // },
+      // {
+      //   name: "Red Wing Style 8264 Men's 9-Inch Pull-On Boot",
+      //   description: "foot_protection_desc_5",
+      //   image: footProtection5
+      // },
+      // {
+      //   name: "Red Wing Style 3207 Men's Petroking 8-Inch Boot",
+      //   description: "foot_protection_desc_6",
+      //   image: footProtection6
+      // },
+      // {
+      //   name: "Red Wing Style 6716 Men's Cross Lite Oxford",
+      //   description: "foot_protection_desc_7",
+      //   image: footProtection7
+      // },
+      // {
+      //   name: "Red Wing Style 6721 Men's Cross Lite Slip-On",
+      //   description: "foot_protection_desc_8",
+      //   image: footProtection8
+      // },
+      // {
+      //   name: "Red Wing Style 6722 Men's Cross Lite Slip-On",
+      //   description: "foot_protection_desc_9",
+      //   image: footProtection9
+      // },
+      // {
+      //   name: "Red Wing Style 6714 Men's Cross Lite Chukka",
+      //   description: "foot_protection_desc_10",
+      //   image: footProtection10
+      // },
+      // {
+      //   name: "Red Wing Style 8212 Men's Supersole 5-Inch Boot",
+      //   description: "foot_protection_desc_11",
+      //   image: footProtection11
+      // },
+      // {
+      //   name: "Red Wing Style 8231 Men's 11-Inch Pull-On Boot",
+      //   description: "foot_protection_desc_12",
+      //   image: footProtection12
+      // },
+      // {
+      //   name: "Red Wing Style 6719 Men's Cross Lite Chukka",
+      //   description: "foot_protection_desc_13",
+      //   image: footProtection13
+      // },
+      // {
+      //   name: "Red Wing Style 3229 Men's Petroking 8-Inch Boot",
+      //   description: "foot_protection_desc_14",
+      //   image: footProtection14
+      // },
       {
         name: "Worx Style 5160 Women's Lithium Athletic",
         description: "foot_protection_desc_15",
@@ -438,11 +438,11 @@ const productsData = {
         description: "foot_protection_desc_17",
         image: footProtection17
       },
-      {
-        name: "Red Wing Style 6646 Men's Slip-On",
-        description: "foot_protection_desc_18",
-        image: footProtection18
-      },
+      // {
+      //   name: "Red Wing Style 6646 Men's Slip-On",
+      //   description: "foot_protection_desc_18",
+      //   image: footProtection18
+      // },
       {
         name: "Safety Jogger HERCULES S5 FO",
         description: "foot_protection_desc_19",
