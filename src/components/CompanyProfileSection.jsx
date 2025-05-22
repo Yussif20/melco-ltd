@@ -45,12 +45,12 @@ const CompanyProfileSection = () => {
         <h2 className="text-4xl sm:text-5xl font-bold text-[#243e87] dark:text-white mb-6 animate-fade-in-up tracking-wide">
           {t('company_profile_title', 'Download Our Company Profile')}
         </h2>
-        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto animate-fade-in-up delay-100 leading-relaxed">
+        {/* <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto animate-fade-in-up delay-100 leading-relaxed">
           {t(
             'company_profile_text',
             'Discover Melco (ميلكو) and our dedication to top-tier safety equipment and protective gear solutions.'
           )}
-        </p>
+        </p> */}
         <a
           href={companyProfilePDF}
           download="Melco_Company_Profile.pdf"
