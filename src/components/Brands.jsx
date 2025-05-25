@@ -41,7 +41,7 @@ const Brands = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-20 bg-background">
+    <section className="py-16 px-4 sm:px-6 lg:px-20 bg-gray-50 ">
       <h2 className="sr-only">
         {t('brands_title', 'Our Trusted Safety Equipment Brands')}
       </h2>

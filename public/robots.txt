@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /contact/
+Disallow: /temp/
+Allow: /
+Allow: /products/
+Allow: /about/
+Sitemap: https://masterequiment.com/sitemap.xml
