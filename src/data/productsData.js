@@ -56,24 +56,24 @@ import handProtection12 from "../assets/show-products/hand-protection/hand12.jpe
 
 // Foot Protection
 import footProtectionHeader from "../assets/category-headers/foot.png"; // Placeholder
-import footProtection1 from "../assets/show-products/foot-protection/foot1.png";
-import footProtection2 from "../assets/show-products/foot-protection/foot2.webp";
-import footProtection3 from "../assets/show-products/foot-protection/foot3.jpg";
-import footProtection4 from "../assets/show-products/foot-protection/foot4.webp";
-import footProtection5 from "../assets/show-products/foot-protection/foot5.png";
-import footProtection6 from "../assets/show-products/foot-protection/foot6.jpg";
-import footProtection7 from "../assets/show-products/foot-protection/foot7.png";
-import footProtection8 from "../assets/show-products/foot-protection/foot8.jpg";
-import footProtection9 from "../assets/show-products/foot-protection/foot9.png";
-import footProtection10 from "../assets/show-products/foot-protection/foot10.png";
-import footProtection11 from "../assets/show-products/foot-protection/foot11.jpg";
-import footProtection12 from "../assets/show-products/foot-protection/foot12.jpg";
-import footProtection13 from "../assets/show-products/foot-protection/foot13.png";
-import footProtection14 from "../assets/show-products/foot-protection/foot14.png";
-import footProtection15 from "../assets/show-products/foot-protection/foot15.png";
+// import footProtection1 from "../assets/show-products/foot-protection/foot1.png";
+// import footProtection2 from "../assets/show-products/foot-protection/foot2.webp";
+// import footProtection3 from "../assets/show-products/foot-protection/foot3.jpg";
+// import footProtection4 from "../assets/show-products/foot-protection/foot4.webp";
+// import footProtection5 from "../assets/show-products/foot-protection/foot5.png";
+// import footProtection6 from "../assets/show-products/foot-protection/foot6.jpg";
+// import footProtection7 from "../assets/show-products/foot-protection/foot7.png";
+// import footProtection8 from "../assets/show-products/foot-protection/foot8.jpg";
+// import footProtection9 from "../assets/show-products/foot-protection/foot9.png";
+// import footProtection10 from "../assets/show-products/foot-protection/foot10.png";
+// import footProtection11 from "../assets/show-products/foot-protection/foot11.jpg";
+// import footProtection12 from "../assets/show-products/foot-protection/foot12.jpg";
+// import footProtection13 from "../assets/show-products/foot-protection/foot13.png";
+// import footProtection14 from "../assets/show-products/foot-protection/foot14.png";
+// import footProtection15 from "../assets/show-products/foot-protection/foot15.png";
 import footProtection16 from "../assets/show-products/foot-protection/foot16.jpg";
 import footProtection17 from "../assets/show-products/foot-protection/foot17.jpg";
-import footProtection18 from "../assets/show-products/foot-protection/foot18.png";
+// import footProtection18 from "../assets/show-products/foot-protection/foot18.png";
 import footProtection19 from "../assets/show-products/foot-protection/foot19.jpeg";
 import footProtection20 from "../assets/show-products/foot-protection/foot20.jpeg";
 import footProtection21 from "../assets/show-products/foot-protection/foot21.png";
@@ -423,11 +423,11 @@ const productsData = {
       //   description: "foot_protection_desc_14",
       //   image: footProtection14
       // },
-      {
-        name: "Worx Style 5160 Women's Lithium Athletic",
-        description: "foot_protection_desc_15",
-        image: footProtection15
-      },
+      // {
+      //   name: "Worx Style 5160 Women's Lithium Athletic",
+      //   description: "foot_protection_desc_15",
+      //   image: footProtection15
+      // },
       {
         name: "Safety Jogger X2000 S3",
         description: "foot_protection_desc_16",

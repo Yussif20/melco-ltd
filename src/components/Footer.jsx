@@ -83,14 +83,14 @@ const Footer = () => {
             {t('footer_email')}
             <a href="mailto:Ahmed@melco-ltd.com" aria-label={t('footer_email')}>
               {' '}
-              Ahmed@melco-ltd.com
+              : Ahmed@melco-ltd.com
             </a>
           </p>
           <p className="text-sm sm:text-base text-gray-300">
             {t('footer_phone')}
             <a href="tel:+966553653329" aria-label={t('footer_phone')}>
               {' '}
-              +966553653329
+              : +966553653329
             </a>
           </p>
         </div>
