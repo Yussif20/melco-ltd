@@ -102,7 +102,7 @@ import footProtection43 from "../assets/show-products/foot-protection/foot43.png
 import footProtection44 from "../assets/show-products/foot-protection/foot44.png";
 
 // Body Protection
-import bodyProtectionHeader from "../assets/category-headers/body.png"; // Placeholder
+import bodyProtectionHeader from "../assets/category-headers/body.jpg"; // Placeholder
 import bodyProtection1 from "../assets/show-products/body-protection/body1.webp";
 import bodyProtection2 from "../assets/show-products/body-protection/body2.jpg";
 import bodyProtection3 from "../assets/show-products/body-protection/body3.jpeg";

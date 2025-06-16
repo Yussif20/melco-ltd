@@ -4,7 +4,7 @@ import innovationIcon from '../assets/values/innovation.png';
 import professionalismIcon from '../assets/values/professionalism.png';
 import partnershipIcon from '../assets/values/partnership.png';
 import sustainabilityIcon from '../assets/values/sustainability.png';
-import aboutTitleVideo from '../assets/about-title.mp4';
+import aboutTitleImage from '../assets/about-title.png';
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -25,17 +25,12 @@ const AboutUs = () => {
       />
       <link rel="canonical" href="https://masterequiment.com/about" />
       <div className="w-screen relative overflow-hidden">
-        <video
-          src={aboutTitleVideo}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-auto lg:h-80 object-cover transform transition-transform duration-500 hover:scale-105"
-          poster="/path-to-poster-image.jpg"
-          loading="lazy"
+        <img
+          src={aboutTitleImage}
+          alt={t('about_title_image_alt', 'Melco About Us Title Image')}
+          className="w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] object-cover"
         />
-        <div className="absolute inset-0 bg-[#1F2937]/30 pointer-events-none" />
+        {/* <div className="absolute inset-0 bg-[#1F2937]/40 pointer-events-none" /> */}
       </div>
 
       <div className="relative py-20 sm:py-28 px-6 sm:px-10 lg:px-16 bg-gradient-to-b from-gray-50 to-white">

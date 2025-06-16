@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import headImage from '../assets/products/head.png';
-import eyeImage from '../assets/products/eye.png';
-import earImage from '../assets/products/hear.jpg';
-import breatheImage from '../assets/products/resp.jpg';
-import handImage from '../assets/products/hand.png';
-import bodyImage from '../assets/products/body.png';
+import eyeImage from '../assets/products/eye.jpg';
+import earImage from '../assets/products/hear.webp';
+import breatheImage from '../assets/products/resp.webp';
+import handImage from '../assets/products/hand.jpg';
+import bodyImage from '../assets/products/body.jpg';
 import footImage from '../assets/products/foot.png';
 import gasImage from '../assets/products/gas.jpg';
 import AnimatedSection from './../utils/AnimatedSection';
@@ -92,7 +92,7 @@ const Products = () => {
       <div className="relative max-w-7xl mx-auto">
         <AnimatedSection>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => (
+            {products.map((product) => (
               <div
                 key={product.id}
                 className="group rounded-2xl shadow-xl p-6 w-full max-w-xs mx-auto transform hover:-translate-y-2 transition-all duration-500"
