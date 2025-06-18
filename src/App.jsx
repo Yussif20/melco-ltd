@@ -3,22 +3,22 @@ import {
   Routes,
   Route,
   useLocation,
-} from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import AboutUs from './pages/AboutUs';
-import Products from './pages/Products';
-import ContactUs from './pages/ContactUs';
-import { useEffect } from 'react';
-import i18next from 'i18next';
-import { useTranslation } from 'react-i18next';
-import ShowProducts from './pages/ShowProducts';
+} from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Products from "./pages/Products";
+import ContactUs from "./pages/ContactUs";
+import { useEffect } from "react";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
+import ShowProducts from "./pages/ShowProducts";
 
 const ScrollToTop = () => {
   const location = useLocation();
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location]);
 
   return null;
@@ -30,16 +30,16 @@ const App = () => {
   useEffect(() => {
     const handleDirection = () => {
       const currentLang = i18next.language;
-      const direction = currentLang === 'ar' ? 'rtl' : 'ltr';
+      const direction = currentLang === "ar" ? "rtl" : "ltr";
       document.documentElement.dir = direction;
       document.documentElement.lang = currentLang;
     };
 
     handleDirection();
-    i18next.on('languageChanged', handleDirection);
+    i18next.on("languageChanged", handleDirection);
 
     return () => {
-      i18next.off('languageChanged', handleDirection);
+      i18next.off("languageChanged", handleDirection);
     };
   }, []);
 
@@ -47,7 +47,7 @@ const App = () => {
     <Router basename="/">
       <div
         className={`flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 ${
-          i18n.language === 'ar' ? 'font-tajawal' : 'font-inter'
+          i18n.language === "ar" ? "font-tajawal" : "font-inter"
         }`}
       >
         <Header />
